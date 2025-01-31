@@ -1,0 +1,26 @@
+@import "../../../styles.scss";
+
+.header {
+  width: 100vw;
+  height: 100px;
+  font-family: "Poppins", serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  > img {
+    width: 150px;
+  }
+  > div {
+    display: flex;
+    gap: 29px;
+    > a {
+      color: whitesmoke;
+      text-decoration: none;
+      font-size: 23px;
+      font-weight: 400;
+    }
+    > a:hover {
+      color: $global-link-hover;
+    }
+  }
+}

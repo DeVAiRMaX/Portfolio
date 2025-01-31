@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+$global-darkblue: #141d2f;
+$global-link-hover: #70E61C;
+
+* {
+  margin: 0;
+  background-color: $global-darkblue;
+  overflow-x: hidden;
+}
