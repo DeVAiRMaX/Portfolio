@@ -9,6 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  
   // Zustände für jedes Feld
   isNameFocused: boolean = false;
   isEmailFocused: boolean = false;

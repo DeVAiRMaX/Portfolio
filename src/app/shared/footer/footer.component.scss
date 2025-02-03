@@ -21,6 +21,7 @@
   > img {
     width: 216px;
   }
+
   > a {
     width: 98px;
     font-size: 16px;
@@ -29,6 +30,7 @@
     color: white;
     transition: all 0.3s ease-in-out; /* Transition für den Hover-Effekt */
     &:hover {
+      text-decoration: none;
       position: relative;
     }
     &:hover:after {
@@ -36,11 +38,21 @@
       position: absolute;
       left: 0;
       bottom: -2px;
-      left: 35%;
-      transform: translateX(-50%);
-      width: 75%;
-      border-bottom: 3px solid #70e61c;
-      transition: all 0.3s ease-in-out; /* Transition für den Border */
+      width: 0; // anfangs keine Breite
+      border-bottom: 3px solid #70e61c; // lila Farbe
+      border-radius: 3px;
+      transition: width 0.5s ease-in-out; // Animation
+
+      @keyframes animate {
+        0% {
+          width: 0;
+        }
+        100% {
+          width: 55px;
+        }
+      }
+
+      animation: animate 0.5s forwards;
     }
   }
 }

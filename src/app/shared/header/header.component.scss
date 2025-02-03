@@ -1,21 +1,24 @@
 @import "../../../styles.scss";
 
-.header-container{
+.header-container {
   width: 100vw;
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: $global-darkblue;
 }
-.header {
+.header-section {
   width: 1440px;
   height: 100px;
-  background-color: #141d2f;
+  background-color: $global-darkblue;
   font-family: "Poppins", serif;
   display: flex;
   align-items: center;
   justify-content: space-around;
   > img {
     width: 150px;
+    cursor: pointer;
   }
   > div {
     display: flex;
@@ -27,7 +30,96 @@
       font-weight: 400;
     }
     > a:hover {
-      color: $global-link-hover;
+      color: $global-green;
     }
+  }
+}
+
+a.navbar-link {
+  text-decoration: none;
+  color: white; // oder deine gewünschte Farbe
+
+  &:hover {
+    text-decoration: none;
+    position: relative;
+    color: $global-green;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 0; // anfangs keine Breite
+      border-bottom: 3px solid $global-purple; // lila Farbe
+      border-radius: 3px;
+      transition: width 0.5s ease-in-out; // Animation
+
+      @keyframes animate {
+        0% {
+          width: 0;
+        }
+        100% {
+          width: 55px;
+        }
+      }
+
+      animation: animate 0.5s forwards;
+    }
+  }
+}
+
+.burger-menu-icon {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 27px;
+  width: 30px;
+  cursor: pointer;
+
+  span {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  span:nth-child(2) {
+    margin: 4px 0;
+  }
+}
+
+.burger-menu-icon.active {
+  span {
+    background-color: #333;
+  }
+
+  span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  span:nth-child(2) {
+    opacity: 0;
+  }
+
+  span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+
+@media screen and (max-width: 1405px) {
+  .header-container {
+    justify-content: flex-start;
+  }
+  .header-section {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .navbar-link {
+    display: none;
+  }
+
+  .burger-menu-icon {
+    display: flex;
   }
 }

@@ -12,16 +12,6 @@
   left: 47px;
 }
 
-.arm {
-  position: absolute;
-  top: 377.6px;
-  left: 158.5px;
-}
-
-// .hero{
-//     opacity: 0.2;
-// }
-
 .vector {
   width: 100%;
   min-width: 1440px;
@@ -29,14 +19,11 @@
   position: absolute;
   top: 379px;
   left: 0;
-  // z-index: 3;
+  z-index: 3;
 }
 .about-me {
   width: 1340px;
   height: 532px;
-  // position: absolute;
-  // top:1067px;
-  // right: 0;
 }
 
 .skills {
@@ -80,4 +67,11 @@
 .footer {
   position: absolute;
   top: 6180px;
+}
+
+@media screen and (max-width: 1405px) {
+  .vector {
+    top: 160px;
+  }
+  
 }

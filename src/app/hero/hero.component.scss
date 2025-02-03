@@ -1,6 +1,7 @@
-.heroCon {
+@import "../../styles.scss";
+
+.hero-container {
   width: 1344px;
-  // height: 646px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,12 +12,12 @@
   width: fit-content;
 }
 
-.mebg {
+.me-bg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1; 
+  z-index: 1;
 }
 
 .me {
@@ -27,23 +28,19 @@
 }
 
 .name-container {
-  width: 718px;
   position: relative;
-  top: -100px;
-  // height: 172px;
-  // background-color: red;
-  // opacity: 0.3;
+  top: -138px;
+  z-index: 10;
 }
 .talk-button-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 54px;
 }
-.talk {
+.talk-button {
   width: 165px;
   height: 58px;
-  background-color: #70e61c;
+  background-color: $global-green;
   border-radius: 10px;
   border: none;
   padding: 15px 30px;
@@ -55,12 +52,15 @@
   color: white;
   cursor: pointer;
   transition: all 0.2s ease;
+  position: relative;
+  right: 45px;
+  top: 30px;
 }
-.talk:hover {
-  background-color: #9747ff;
+.talk-button:hover {
+  background-color: $global-purple;
   transform: scaleX(1.1) scaleY(1.1);
 }
-.socials {
+.socials-container {
   width: 566px;
   height: 40px;
   position: absolute;
@@ -81,27 +81,24 @@
   width: fit-content;
   transform: rotate(-90deg);
   position: relative;
-  top: 137px;
-  left: -24px;
+  top: 135px;
+  left: -100px;
   font-size: 64px;
   font-weight: 400;
   font-family: "Poppins", serif;
   overflow: hidden;
-  > p {
     color: white;
     margin-block-start: 0;
     margin-block-end: 0;
-  }
 }
 .name-job {
   width: 100%;
-  // height: 172px;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   > h2 {
-    height: 108px;
+    height: 100px;
     margin-block-start: 0;
     margin-block-end: 0;
     font-size: 90px;
@@ -111,19 +108,19 @@
     line-height: 108px;
   }
   > p {
-    height: 70px;
+    // height: 70px;
     margin-block-start: 0;
     margin-block-end: 0;
     font-size: 58px;
     font-weight: 400;
     font-family: "Poppins", serif;
-    color: #9747ff;
+    color: $global-purple;
     text-transform: uppercase;
     line-height: 69.6px;
   }
 }
 
-.scroll {
+.scroll-container {
   position: absolute;
   top: 700px;
   right: 0;
@@ -133,6 +130,9 @@
     font-size: 23px;
     font-weight: 400;
     color: white;
+    > img {
+      transform: rotate(-90deg);
+    }
   }
 }
 
@@ -142,4 +142,44 @@
 }
 .hovereffect:hover {
   transform: scale(1.4);
+}
+
+@media screen and (max-width: 1405px) {
+  .hero-container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .me-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .me {
+    width: 410.61px;
+    height: 448.11px;
+  }
+  .name-container {
+    top: 0px;
+  }
+  .name-job {
+    > h2 {
+      height: 60px;
+      font-size: 44px;
+    }
+    > p {
+      font-size: 28px;
+    }
+  }
+  .i-am {
+    width: 71px;
+    font-size: 32px;
+    top: 94px;
+    left: -51px;
+  }
+  .talk-button {
+    width: 133px;
+    font-size: 16px;
+    right: 45px;
+    top: 30px;
+  }
 }
