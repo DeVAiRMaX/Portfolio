@@ -1,8 +1,15 @@
 @import "../../../styles.scss";
 
-.header {
+.header-container{
   width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header {
+  width: 1440px;
   height: 100px;
+  background-color: #141d2f;
   font-family: "Poppins", serif;
   display: flex;
   align-items: center;

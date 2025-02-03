@@ -1,0 +1,70 @@
+.footer-container {
+  width: 100vw;
+  background-color: #141d2f;
+  border-top: 4px solid #70e61c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-section {
+  width: 1440px;
+  height: 291px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  > img {
+    width: 216px;
+  }
+  > a {
+    width: 98px;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-in-out; /* Transition für den Hover-Effekt */
+    &:hover {
+      position: relative;
+    }
+    &:hover:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      left: 35%;
+      transform: translateX(-50%);
+      width: 75%;
+      border-bottom: 3px solid #70e61c;
+      transition: all 0.3s ease-in-out; /* Transition für den Border */
+    }
+  }
+}
+
+.footer-copyright {
+  > p {
+    font-size: 23px;
+    font-weight: 400;
+    color: white;
+    margin: 0;
+  }
+}
+.footer-socials {
+  width: 174px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.scocialicon {
+  width: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.scocialicon:hover {
+  transform: scaleX(1.4) scaleY(1.4);
+}

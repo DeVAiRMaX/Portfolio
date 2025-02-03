@@ -1,6 +1,83 @@
-.header{
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 99;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.me {
+  width: 646px;
+  position: absolute;
+  top: 106px;
+  left: 47px;
+}
+
+.arm {
+  position: absolute;
+  top: 377.6px;
+  left: 158.5px;
+}
+
+// .hero{
+//     opacity: 0.2;
+// }
+
+.vector {
+  width: 100%;
+  min-width: 1440px;
+  height: 1078.6px;
+  position: absolute;
+  top: 379px;
+  left: 0;
+  // z-index: 3;
+}
+.about-me {
+  width: 1340px;
+  height: 532px;
+  // position: absolute;
+  // top:1067px;
+  // right: 0;
+}
+
+.skills {
+  width: 1340px;
+  height: 404px;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 100px;
+}
+.space {
+  display: flex;
+  flex-direction: column;
+  gap: 320px;
+  margin-top: 240px;
+}
+
+.portfolio {
+  width: 1304px;
+  height: 2216.57px;
+}
+
+.feedback {
+  width: 1340px;
+  position: absolute;
+  top: 4726px;
+  left: 100px;
+}
+
+.conact {
+  width: 1340px;
+  height: 747px;
+  position: absolute;
+  top: 5286px;
+  left: 0;
+}
+
+.footer {
+  position: absolute;
+  top: 6180px;
 }

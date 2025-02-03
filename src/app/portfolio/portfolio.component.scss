@@ -1,0 +1,115 @@
+.portfolio-container {
+  width: 1304px;
+  height: 2216.57px;
+  position: absolute;
+  left: 136px;
+  top: 2363px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.title-portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 32px;
+  > h1 {
+    font-size: 90px;
+    font-weight: 700;
+    color: white;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+}
+.explore {
+  position: relative;
+  bottom: 32px;
+  right: 60px;
+  > p {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    margin: 0;
+  }
+}
+.project {
+  width: 1168px;
+  height: 339.19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+.description-text {
+  > h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #9747ff;
+  }
+  > span {
+    font-size: 23px;
+    font-weight: 400;
+    color: #70e61c;
+  }
+  > p {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+  }
+}
+.description-buttons {
+  width: 375px;
+  display: flex;
+  align-items: center;
+  gap: 86px;
+}
+.live {
+  width: 152px;
+  height: 58px;
+  background-color: #9747ff;
+  border-radius: 10px;
+  border: none;
+  padding: 15px 30px;
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-size: 23px;
+  font-weight: 400;
+  font-family: "Poppins", serif;
+  line-height: 27.5px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 30px;
+}
+
+.live:hover {
+  background-color: #70e61c;
+  transform: scale(1.1);
+}
+
+.git {
+  width: 137px;
+  height: 58px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid #70e61c;
+  padding: 15px 30px;
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-size: 23px;
+  font-weight: 400;
+  font-family: "Poppins", serif;
+  line-height: 27.5px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 30px;
+}
+
+.git:hover {
+  background-color: #70e61c;
+  transform: scale(1.1);
+}
+
+.txt-left{
+  text-align: right;
+}

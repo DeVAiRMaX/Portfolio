@@ -1,0 +1,82 @@
+.about-me-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  // top: 950px;
+  left: 100px;
+}
+.char-circle-img-line {
+  // width: 104px;
+  height: 4px;
+  // position: absolute;
+  // top: 274px;
+  // right: 0;
+}
+.char-circle-img {
+  width: 453px;
+  height: 453px;
+  // position: absolute;
+  // right: 266px;
+  // top: 50px;
+}
+.circle-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+p {
+  color: red;
+  margin: 0;
+}
+.description {
+  width: 471px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  > h2 {
+    font-family: "Poppins", serif;
+    font-size: 90px;
+    font-weight: 700;
+    color: white;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+}
+
+.what-about {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  > p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", serif;
+    color: white;
+  }
+}
+
+.what-about-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  > p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", serif;
+    color: white;
+  }
+  > img {
+    width: 48px;
+  }
+}
+
+.hovereffect {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.hovereffect:hover {
+  transform: scale(1.4);
+}

@@ -1,8 +1,9 @@
 $global-darkblue: #141d2f;
 $global-link-hover: #70E61C;
 
-* {
+body {
   margin: 0;
   background-color: $global-darkblue;
   overflow-x: hidden;
+  font-family: "Poppins", serif;
 }

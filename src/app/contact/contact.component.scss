@@ -1,0 +1,230 @@
+.contact-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
+  > h1 {
+    font-size: 90px;
+    font-weight: 700;
+    color: white;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+}
+.contact-section {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  margin-top: 24px;
+}
+
+.description {
+  width: 474px;
+  height: 154px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  margin-left: 110px;
+  > h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  > p {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+}
+
+.form {
+  width: 617px;
+  height: 508px;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 15px 25px;
+  background-color: #141d2f;
+  border: 2px solid #9747ff;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  font-family: "Poppins", serif;
+}
+input:hover {
+  border: 2px solid #70e61c;
+}
+
+input::placeholder {
+  color: lightgray;
+  font-family: "Poppins", serif;
+}
+
+input.focused {
+  background-image: url(../../assets/img/input-error.png);
+  background-repeat: no-repeat;
+  background-position: right 16px top 50% ;
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 13px;
+  margin-top: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: all 0.3s ease;
+}
+
+.error-message.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  margin-bottom: 16px;
+  transition: all 0.3s ease;
+}
+
+textarea {
+  height: 202px;
+  padding: 15px 25px;
+  background-color: #141d2f;
+  border: 2px solid #9747ff;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+  min-height: 100px;
+  font-family: "Poppins", serif;
+}
+
+textarea:hover {
+  border: 2px solid #70e61c;
+}
+
+textarea::placeholder {
+  color: lightgray;
+  font-family: "Poppins", serif;
+}
+
+textarea.focused {
+  border-color: red;
+  background-image: url(../../assets/img/input-error.png);
+  background-repeat: no-repeat;
+  background-position: right 16px top 16px ;
+}
+
+.error-message {
+  color: red;
+  font-size: 13px;
+  margin-top: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+
+.error-message.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  margin-bottom: 16px;
+  transition: all 0.3s ease;
+}
+
+.policy-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.policy-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  > p {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+}
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.policy-check input {
+  display: none;
+}
+
+.checkbox-custom {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #70e61c;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+.checkbox-container input:checked + .checkbox-custom::after {
+  content: "\2713";
+  color: #70e61c;
+  font-size: 16px;
+}
+
+.sendmsg-button {
+  width: 253px;
+  height: 58px;
+  background-color: #70e61c;
+  border-radius: 10px;
+  border: none;
+  padding: 15px 30px;
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-size: 23px;
+  font-weight: 400;
+  font-family: "Poppins", serif;
+  line-height: 27.5px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.sendmsg-button:hover {
+  background-color: #9747ff;
+  transform: scaleX(1.1) scaleY(1.1);
+}
+
+.scroll-up-icon {
+  background-image: url(../../assets/img/scroll-up.png);
+  width: 39px;
+  height: 39px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  bottom: 32px;
+}
+
+.scroll-up-icon:hover {
+  background-image: url(../../assets/img/scroll-up-hover.png);
+}
