@@ -3,6 +3,7 @@
   top: 0;
   left: 0;
   z-index: 99;
+  max-width: 100%;
 }
 
 .me {
@@ -71,7 +72,20 @@
 
 @media screen and (max-width: 1405px) {
   .vector {
-    top: 160px;
+    top: 207px;
+    // width: 915.31px;
+    // min-width: auto;
   }
-  
+}
+@media screen and (max-width: 1200px) {
+  .vector {
+    min-width: 915.31px;
+    top: 147px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .vector {
+    min-width: 915.31px;
+    top: 147px;
+  }
 }
