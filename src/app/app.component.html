@@ -7,13 +7,33 @@
 <img class="purpleshadow3" src="../assets/img/Purpleshadow3.png" alt="" />
 <div class="wrapper">
   <app-hero class="hero"></app-hero>
-  <!-- <div class="space"> -->
-  
-  <app-aboutme class="about-me"></app-aboutme>
-  <app-skills class="skills"></app-skills>
-  <app-portfolio class="portfolio"></app-portfolio>
-  <app-feedback class="feedback"></app-feedback>
-  <app-contact class="conact"></app-contact>
+
+  <app-aboutme
+    class="about-me"
+    id="aboutMe"
+    [@scrollAnimation]="aboutMeState"
+  ></app-aboutme>
+  <app-skills
+    class="skills"
+    id="skills"
+    [@scrollAnimationRight]="skillsState"
+  ></app-skills>
+
+  <app-portfolio
+    id="portfolio"
+    class="portfolio"
+    [@scrollAnimation]="portfolioState"
+  ></app-portfolio>
+
+  <app-feedback
+    class="feedback"
+    id="feedback"
+    [@scrollAnimationRight]="feedbackState"
+  ></app-feedback>
+  <app-contact
+    class="contact"
+    id="contact"
+    [@scrollAnimation]="contactState"
+  ></app-contact>
   <app-footer class="footer"></app-footer>
 </div>
-<!-- </div> -->

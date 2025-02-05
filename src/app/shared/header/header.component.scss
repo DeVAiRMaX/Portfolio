@@ -1,8 +1,89 @@
 @import "../../../styles.scss";
 
-.header-container {
+body {
+  transition: all 0.3s ease;
+}
+
+.mobile-menu.show {
+  right: 0; /* move it back to the original position */
+}
+
+.mobile-menu {
+  position: absolute;
+  z-index: 999;
+  background-color: #141d2fc9;
   width: 100vw;
   max-width: 100%;
+  height: 100vh;
+  right: -100vw; /* move it off-screen to the right */
+  transition: right 0.3s ease-in-out; /* add transition effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  >div{
+    width: 114px;
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    position: relative;
+    top: -100px;
+    > a {
+      color: whitesmoke;
+      text-decoration: none;
+      font-size: 23px;
+      font-weight: 400;
+    }
+    > a:hover {
+      color: $global-green;
+    }
+  }
+}
+
+
+.burger-menu-icon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 24px;
+  width: 30px;
+  position: relative;
+  transition: all 0.5s ease;
+
+  .burger-line {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    border-radius: 4px;
+    transition: all 0.5s ease; /* Verlangsamt die Transition */
+  }
+
+  &.open {
+    /* Erstes Line (oben) */
+    .burger-line:nth-child(1) {
+      transform: rotate(45deg); /* Drehung um 45 Grad */
+      position: absolute;
+      top: 0;
+    }
+
+    /* Zweites Line (Mitte) wird unsichtbar gemacht */
+    .burger-line:nth-child(2) {
+      opacity: 0;
+    }
+
+    /* Drittes Line (unten) */
+    .burger-line:nth-child(3) {
+      transform: rotate(-45deg); /* Drehung um -45 Grad */
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
+
+
+.header-container {
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,8 +152,8 @@ a.navbar-link {
 .burger-menu-icon {
   display: none;
   flex-direction: column;
-  justify-content: space-between;
-  height: 27px;
+  // justify-content: space-between;
+  height: 19px;
   width: 30px;
   cursor: pointer;
 

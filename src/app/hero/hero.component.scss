@@ -83,11 +83,10 @@
   width: fit-content;
   transform: rotate(-90deg);
   position: relative;
-  top: 135px;
-  left: -100px;
-  font-size: 64px;
+  top: 134px;
+  left: -107px;
+  font-size: 68px;
   font-weight: 400;
-  overflow: hidden;
   > p {
     color: white;
     margin-block-start: 0;
@@ -103,13 +102,13 @@
     font-weight: 700;
     font-family: "Poppins", serif;
     color: white;
-    line-height: 108px;
+    line-height: 91px;
   }
   > p {
     // height: 70px;
     margin-block-start: 0;
     margin-block-end: 0;
-    font-size: 58px;
+    font-size: 61px;
     font-weight: 400;
     font-family: "Poppins", serif;
     color: $global-purple;
@@ -181,7 +180,7 @@
     left: -22px !important;
   }
   .i-am {
-    font-size: 28px !important;
+    font-size: 30px !important;
     top: -4px !important;
     left: 18px !important;
     position: relative;
@@ -193,7 +192,7 @@
       line-height: 40px !important;
     }
     > p {
-      font-size: 25px !important;
+      font-size: 27px !important;
       line-height: unset !important;
     }
   }
@@ -206,10 +205,10 @@
     > h2 {
       height: auto;
       font-size: 84px;
-      line-height: 83px;
+      line-height: 110px;
     }
     > p {
-      font-size: 45px;
+      font-size: 57px;
     }
   }
   .hero-container {
@@ -244,7 +243,7 @@
     flex-direction: row;
     align-items: center;
     position: relative;
-    left: -13px;
+    left: -20px;
     > h2 {
       height: 60px;
       font-size: 44px;
@@ -254,9 +253,9 @@
     }
   }
   .i-am {
-    font-size: 57px;
-    top: -4px;
-    left: 37px;
+    font-size: 66px;
+    top: 4px;
+    left: 41px;
     position: relative;
   }
   .talk-button {
@@ -270,7 +269,7 @@
     // display: none;
     z-index: 3;
     right: -42px;
-    >p{
+    > p {
       margin-block-start: 0;
       margin-block-end: 0;
       font-size: 20px;
@@ -281,8 +280,8 @@
     position: unset;
     z-index: 3;
     justify-content: flex-start;
-    >a{
-      display: none
-    };
-}
+    > a {
+      display: none;
+    }
+  }
 }

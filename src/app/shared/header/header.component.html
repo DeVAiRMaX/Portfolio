@@ -2,19 +2,68 @@
   <div class="header-section">
     <img src="./assets/img/header-logo.png" alt="" />
     <div>
-      <a class="navbar-link" href="">About me</a>
-      <a class="navbar-link" href="">Skills</a>
-      <a class="navbar-link" href="">Portfolio</a>
-      
-      <div class="burger-menu-icon">
-        <span></span>
-        <span></span>
-        <span></span>
+      <a
+        class="navbar-link"
+        href="javascript:void(0)"
+        (click)="scrollToElement('aboutMe', 100)"
+        >About me</a
+      >
+      <a
+        class="navbar-link"
+        href="javascript:void(0)"
+        (click)="scrollToElement('skills', 100)"
+        >Skills</a
+      >
+      <a
+        class="navbar-link"
+        href="javascript:void(0)"
+        (click)="scrollToElement('portfolio', 100)"
+        >Portfolio</a
+      >
+      <a
+        class="navbar-link"
+        href="javascript:void(0)"
+        (click)="scrollToElement('contact', 100)"
+        >Contact</a
+      >
+      <div
+        (click)="showMenu()"
+        class="burger-menu-icon"
+        [class.open]="isMenuOpen"
+      >
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
       </div>
-
     </div>
+  </div>
+</div>
 
-      
-
+<div class="mobile-menu" #mobileMenu>
+  <div>
+    <a
+        class=""
+        href="javascript:void(0)"
+        (click)="scrollToElement('aboutMe', 100); closeMenu()"
+        >About me</a
+      >
+      <a
+        class=""
+        href="javascript:void(0)"
+        (click)="scrollToElement('skills', 100); closeMenu()"
+        >Skills</a
+      >
+      <a
+        class=""
+        href="javascript:void(0)"
+        (click)="scrollToElement('portfolio', 100); closeMenu()"
+        >Portfolio</a
+      >
+      <a
+        class=""
+        href="javascript:void(0)"
+        (click)="scrollToElement('contact', 100); closeMenu()"
+        >Contact</a
+      >
   </div>
 </div>

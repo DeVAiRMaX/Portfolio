@@ -2,6 +2,10 @@ $global-darkblue: #141d2f;
 $global-green: #70e61c;
 $global-purple: #9747ff;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   background-color: $global-darkblue;
@@ -14,6 +18,32 @@ body {
   left: 0;
   top: 0;
   width: 100vw;
-  // max-width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #9747ff;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #7e36b2;
+}
+
+::-webkit-scrollbar-horizontal {
+  height: 12px;
+}
+::-webkit-scrollbar-vertical {
+  width: 6px;
 }
