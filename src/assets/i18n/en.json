@@ -1,0 +1,103 @@
+{
+	"ABOUT_ME": {
+		"CHALLENGE": "I am open-minded and always looking for personal challenges to constantly improve my knowledge and skills.",
+		"HEADER": "About me",
+		"INTRO": "Hi, I’m a german speaking Frontend Developer based near Munich...",
+		"LOCATION": "Flexible in terms of working environments, I can work effectively both on-site in Munich and remotely.",
+		"PROBLEM_SOLVING": "In my profession, programming isn't just about writing code; it's a creative form of problem-solving..."
+	},
+	"SKILLS": {
+		"CONTACT_ME": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
+		"GET_IN_TOUCH": "Get in touch",
+		"ICONS": {
+			"ANGULAR": "angular",
+			"CSS": "css",
+			"FIREBASE": "firebase",
+			"GIT": "git",
+			"HTML": "html",
+			"JAVASCRIPT": "javascript",
+			"LEARNING": "Continually learning",
+			"MATERIAL_DESIGN": "material design",
+			"REST_API": "rest api",
+			"SCRUM": "scrum",
+			"TYPESCRIPT": "typescript"
+		},
+		"LOOKING_FOR": "Looking for <b>another skill</b>?",
+		"MY_SKILLS": "My skills",
+		"SKILL_DESCRIPTION": "I have gained experience in building projects with different frontend technologies and concepts."
+	},
+  "portfolio": {
+    "title": "Portfolio",
+    "explore": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+    "projects": {
+      "join": {
+        "title": "Join",
+        "tech": "Angular | TypeScript | HTML | CSS | Firebase",
+        "description": "Task manager inspired by the Kanban system. Create and organize tasks using drag-and-drop functions, assign users and categories."
+      },
+      "sharki": {
+        "title": "Sharki",
+        "tech": "JavaScript | HTML | CSS",
+        "description": "A simple Jump-and-Run game based on an object-oriented approach. Help Sharki to find coins and poison bottles to fight against the killer whale."
+      },
+      "crm": {
+        "title": "Simple CRM",
+        "tech": "Angular | Firebase",
+        "description": "A very simple Customer Relationship Management system working with CRUD functionality."
+      },
+      "pokedex": {
+        "title": "Pokédex",
+        "tech": "JavaScript | HTML | CSS | Api",
+        "description": "Based on the PokéAPI, a simple library that provides and catalogs Pokémon information."
+      },
+      "dabooble": {
+        "title": "DA Bubble",
+        "tech": "Angular | TypeScript | Firebase",
+        "description": "This app is a Slack clone. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
+      },
+      "buttons": {
+        "live": "Live Test",
+        "github": "Github"
+      }
+    }
+  },
+  "feedback": {
+    "comment": {
+      "text": "Michael really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment.",
+      "author": "V. Schuster - Team Partner"
+    }
+  },
+    "contact": {
+      "title": "Contact",
+      "problem": "Got a problem to solve?",
+      "introduction": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+      "frontendDev": "Need a Frontend developer? Contact me!",
+      "form": {
+        "namePlaceholder": "Your name",
+        "nameRequired": "Your name is required",
+        "emailPlaceholder": "Your email",
+        "emailRequired": "Your email is required",
+        "messagePlaceholder": "Your message",
+        "messageRequired": "Your message is required",
+        "policyText": "I've read the privacy policy and agree to the processing of my data as outlined.",
+        "sendButton": "Send message :)"
+      }
+    },
+    "footer": {
+    "legalNotice": "Legal Notice",
+    "copyright": "Dominik Roth 2024"
+  },
+  "header": {
+    "aboutMe": "About me",
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "hero": {
+    "iAm": "I am",
+    "name": "Max Wagener",
+    "job": "Frontend Developer",
+    "letstalk": "Let's talk!",
+    "scrollDown": "Scroll down"
+  }
+}

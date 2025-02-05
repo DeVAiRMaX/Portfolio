@@ -2,18 +2,17 @@
   <div class="contact-header">
     <img class="short-lilaline-contact" src="./assets/img/bigshortline.png" alt="">
     <img src="./assets/img/lilacommentline.png" alt="" />
-    <h1>Contact</h1>
+    <h1>{{ 'contact.title' | translate }}</h1>
   </div>
 
   <div class="contact-section">
     <div class="description">
-      <h3>Got a problem to solve?</h3>
+      <h3>{{ 'contact.problem' | translate }}</h3>
       <p>
-        Contact me through this form, I am interested in hearing from you,
-        knowing your ideas and contributing to your projects with my work.
+        {{ 'contact.introduction' | translate }}
       </p>
 
-      <p>Need a Frontend developer? <b>Contact me!</b></p>
+      <p>{{ 'contact.frontendDev' | translate }}</p>
     </div>
 
     <div class="form">
@@ -23,10 +22,10 @@
         (focus)="onFocus('name')"
         (blur)="onBlur('name')"
         (input)="onInput($event, 'name')"
-        placeholder="Your name"
+        placeholder="{{ 'contact.form.namePlaceholder' | translate }}"
       />
       <div class="error-message" [class.visible]="isNameFocused && !nameValue">
-        Your name is required
+        {{ 'contact.form.nameRequired' | translate }}
       </div>
 
       <input
@@ -35,13 +34,13 @@
         (focus)="onFocus('email')"
         (blur)="onBlur('email')"
         (input)="onInput($event, 'email')"
-        placeholder="Your email"
+        placeholder="{{ 'contact.form.emailPlaceholder' | translate }}"
       />
       <div
         class="error-message"
         [class.visible]="isEmailFocused && !emailValue"
       >
-        Your email is required
+        {{ 'contact.form.emailRequired' | translate }}
       </div>
 
       <textarea
@@ -49,13 +48,13 @@
         (focus)="onFocus('message')"
         (blur)="onBlur('message')"
         (input)="onInput($event, 'message')"
-        placeholder="Your message"
+        placeholder="{{ 'contact.form.messagePlaceholder' | translate }}"
       ></textarea>
       <div
         class="error-message"
         [class.visible]="isMessageFocused && !messageValue"
       >
-        Your message is required
+        {{ 'contact.form.messageRequired' | translate }}
       </div>
       <div class="policy-container">
         <div class="policy-check">
@@ -64,11 +63,10 @@
             <span class="checkbox-custom"></span>
           </label>
           <p>
-            I've read the privacy policy and agree to the processing of my data
-            as outlined.
+            {{ 'contact.form.policyText' | translate }}
           </p>
         </div>
-        <button class="sendmsg-button">Send message :)</button>
+        <button class="sendmsg-button">{{ 'contact.form.sendButton' | translate }}</button>
       </div>
     </div>
     <div class="scroll-up-icon" (click)="scrollToTop()"></div>

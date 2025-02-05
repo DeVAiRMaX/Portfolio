@@ -1,10 +1,13 @@
 import { Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
@@ -13,13 +16,17 @@ export class HeaderComponent {
 
   isMenuOpen = false;
 
-  constructor(private renderer: Renderer2) { }
+  language: 'EN' | 'DE' = 'EN';
 
-  language: 'DE' | 'EN' = 'DE';
+  constructor(private renderer: Renderer2, private translate: TranslateService) {
+    this.translate.setDefaultLang(this.language.toLowerCase());
+  }
 
   toggleLanguage() {
     this.language = this.language === 'DE' ? 'EN' : 'DE';
+    this.translate.use(this.language.toLowerCase());
   }
+
 
   showMenu() {
     this.isMenuOpen = !this.isMenuOpen;

@@ -39,7 +39,6 @@
   justify-content: center;
 }
 .talk-button {
-  width: 165px;
   height: 58px;
   background-color: $global-green;
   border-radius: 10px;
@@ -283,5 +282,11 @@
     > a {
       display: none;
     }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .name-container[_ngcontent-ng-c988309638] {
+    width: auto;
   }
 }

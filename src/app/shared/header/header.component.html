@@ -6,25 +6,25 @@
         class="navbar-link"
         href="javascript:void(0)"
         (click)="scrollToElement('aboutMe', 100)"
-        >About me</a
+        >{{ 'header.aboutMe' | translate }}</a
       >
       <a
         class="navbar-link"
         href="javascript:void(0)"
         (click)="scrollToElement('skills', 100)"
-        >Skills</a
+        >{{ 'header.skills' | translate }}</a
       >
       <a
         class="navbar-link"
         href="javascript:void(0)"
         (click)="scrollToElement('portfolio', 100)"
-        >Portfolio</a
+        >{{ 'header.portfolio' | translate }}</a
       >
       <a
         class="navbar-link"
         href="javascript:void(0)"
         (click)="scrollToElement('contact', 100)"
-        >Contact</a
+        >{{ 'header.contact' | translate }}</a
       >
       <div class="toggle-container" (click)="toggleLanguage()">
         <div class="toggle-button" [class.active]="language === 'EN'">
@@ -51,25 +51,25 @@
       class=""
       href="javascript:void(0)"
       (click)="scrollToElement('aboutMe', 100); closeMenu()"
-      >About me</a
+      >{{ 'header.aboutMe' | translate }}</a
     >
     <a
       class=""
       href="javascript:void(0)"
       (click)="scrollToElement('skills', 100); closeMenu()"
-      >Skills</a
+      >{{ 'header.skills' | translate }}</a
     >
     <a
       class=""
       href="javascript:void(0)"
       (click)="scrollToElement('portfolio', 100); closeMenu()"
-      >Portfolio</a
+      >{{ 'header.portfolio' | translate }}</a
     >
     <a
       class=""
       href="javascript:void(0)"
       (click)="scrollToElement('contact', 100); closeMenu()"
-      >Contact</a
+      >{{ 'header.contact' | translate }}</a
     >
   </div>
 </div>

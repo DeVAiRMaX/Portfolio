@@ -1,0 +1,103 @@
+{
+	"ABOUT_ME": {
+		"CHALLENGE": "Ich bin aufgeschlossen und suche immer persönliche Herausforderungen, um mein Wissen und meine Fähigkeiten kontinuierlich zu verbessern.",
+		"HEADER": "Über mich",
+		"INTRO": "Hallo, ich bin ein deutschsprachiger Frontend-Entwickler aus der Nähe von München...",
+		"LOCATION": "Flexibel in Bezug auf Arbeitsumgebungen, ich kann sowohl vor Ort in München als auch remote effektiv arbeiten.",
+		"PROBLEM_SOLVING": "In meinem Beruf ist Programmieren nicht nur das Schreiben von Code; es ist eine kreative Form der Problemlösung..."
+	},
+	"SKILLS": {
+		"CONTACT_ME": "Kontaktiere mich gerne. Ich freue mich darauf, mein Wissen zu erweitern.",
+		"GET_IN_TOUCH": "Kontakt aufnehmen",
+		"ICONS": {
+			"ANGULAR": "Angular",
+			"CSS": "CSS",
+			"FIREBASE": "Firebase",
+			"GIT": "Git",
+			"HTML": "HTML",
+			"JAVASCRIPT": "JavaScript",
+			"LEARNING": "Ständiges Lernen",
+			"MATERIAL_DESIGN": "Material Design",
+			"REST_API": "REST API",
+			"SCRUM": "Scrum",
+			"TYPESCRIPT": "TypeScript"
+		},
+		"LOOKING_FOR": "Suchst du nach <b>einer anderen Fähigkeit</b>?",
+		"MY_SKILLS": "Meine Fähigkeiten",
+		"SKILL_DESCRIPTION": "Ich habe Erfahrung in der Entwicklung von Projekten mit verschiedenen Frontend-Technologien und Konzepten gesammelt."
+	},
+  "portfolio": {
+    "title": "Portfolio",
+    "explore": "Erkunden Sie eine Auswahl meiner Arbeiten hier - Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+    "projects": {
+      "join": {
+        "title": "Join",
+        "tech": "Angular | TypeScript | HTML | CSS | Firebase",
+        "description": "Task Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, ordnen Sie Benutzer und Kategorien zu."
+      },
+      "sharki": {
+        "title": "Sharki",
+        "tech": "JavaScript | HTML | CSS",
+        "description": "Ein einfaches Jump-and-Run-Spiel basierend auf einem objektorientierten Ansatz. Helfen Sie Sharki, Münzen und Giftflaschen zu finden, um gegen den Killerwal zu kämpfen."
+      },
+      "crm": {
+        "title": "Simple CRM",
+        "tech": "Angular | Firebase",
+        "description": "Ein sehr einfaches Customer Relationship Management System, das mit CRUD-Funktionalität arbeitet."
+      },
+      "pokedex": {
+        "title": "Pokédex",
+        "tech": "JavaScript | HTML | CSS | Api",
+        "description": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert."
+      },
+      "dabooble": {
+        "title": "DA Bubble",
+        "tech": "Angular | TypeScript | Firebase",
+        "description": "Diese App ist ein Slack-Clone. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Nachrichten und robuster Kanalorganisation."
+      },
+      "buttons": {
+        "live": "Live-Test",
+        "github": "Github"
+      }
+    }
+  },
+    "feedback": {
+      "comment": {
+        "text": "Michael hat das Team wirklich mit seiner großartigen Organisation und klarer Kommunikation zusammengehalten. Ohne sein Engagement wären wir nicht so weit gekommen.",
+        "author": "V. Schuster - Team Partner"
+      }
+    },
+    "contact": {
+      "title": "Kontaktieren",
+      "problem": "Haben Sie ein Problem zu lösen?",
+      "introduction": "Kontaktieren Sie mich über dieses Formular. Ich bin interessiert, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+      "frontendDev": "Brauchen Sie einen Frontend-Entwickler? Kontaktieren Sie mich!",
+      "form": {
+        "namePlaceholder": "Ihr Name",
+        "nameRequired": "Ihr Name wird benötigt",
+        "emailPlaceholder": "Ihre E-Mail",
+        "emailRequired": "Ihre E-Mail wird benötigt",
+        "messagePlaceholder": "Ihre Nachricht",
+        "messageRequired": "Ihre Nachricht wird benötigt",
+        "policyText": "Ich habe die Datenschutzrichtlinie gelesen und stimme der Verarbeitung meiner Daten wie dargelegt zu.",
+        "sendButton": "Nachricht senden :)"
+      }
+    },
+    "footer": {
+    "legalNotice": "Impressum",
+    "copyright": "Dominik Roth 2024"
+  },
+  "header": {
+    "aboutMe": "Über mich",
+    "skills": "Fähigkeiten",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "iAm": "Ich bin",
+    "name": "Max Wagener",
+    "job": "Frontend Entwickler",
+    "letstalk": "Lass uns reden!",
+    "scrollDown": "Nach unten scrollen"
+  }   
+}

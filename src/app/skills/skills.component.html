@@ -1,79 +1,71 @@
 <div class="skill-container">
   <div class="skill-description-responsive">
     <div>
-      <h3>Looking for <b>another skill</b>?</h3>
-      <p>
-        Feel free to contact me. I look forward to expanding on my previous
-        knowledge.
-      </p>
-
-      <button class="get-in-touch-btn">Get in touch</button>
+      <h3 [innerHTML]="'SKILLS.LOOKING_FOR' | translate"></h3>
+      <p>{{ 'SKILLS.CONTACT_ME' | translate }}</p>
+      <button class="get-in-touch-btn">{{ 'SKILLS.GET_IN_TOUCH' | translate }}</button>
     </div>
   </div>
+
   <div class="icons">
     <div class="singel-icon">
       <img src="./assets/img/icons/html.png" alt="" />
-      <p>html</p>
+      <p>{{ 'SKILLS.ICONS.HTML' | translate }}</p>
     </div>
     <div class="singel-icon">
       <img src="./assets/img/icons/css.png" alt="" />
-      <p>css</p>
+      <p>{{ 'SKILLS.ICONS.CSS' | translate }}</p>
     </div>
     <div class="singel-icon">
       <img src="./assets/img/icons/js.png" alt="" />
-      <p>javascript</p>
+      <p>{{ 'SKILLS.ICONS.JAVASCRIPT' | translate }}</p>
     </div>
     <div class="singel-icon">
       <img src="./assets/img/icons/ts.png" alt="" />
-      <p>typescript</p>
+      <p>{{ 'SKILLS.ICONS.TYPESCRIPT' | translate }}</p>
     </div>
     <div class="singel-icon">
       <img src="./assets/img/icons/angular.png" alt="" />
-      <p>angular</p>
+      <p>{{ 'SKILLS.ICONS.ANGULAR' | translate }}</p>
     </div>
     <div class="singel-icon">
       <img src="./assets/img/icons/firebase.png" alt="" />
-      <p>firebase</p>
+      <p>{{ 'SKILLS.ICONS.FIREBASE' | translate }}</p>
     </div>
     <div class="singel-icon">
       <img src="./assets/img/icons/git.png" alt="" />
-      <p>git</p>
+      <p>{{ 'SKILLS.ICONS.GIT' | translate }}</p>
     </div>
     <div class="singel-icon">
       <img src="./assets/img/icons/api.png" alt="" />
-      <p>rest api</p>
+      <p>{{ 'SKILLS.ICONS.REST_API' | translate }}</p>
     </div>
     <div class="singel-icon">
       <img src="./assets/img/icons/scrum.png" alt="" />
-      <p>scrum</p>
+      <p>{{ 'SKILLS.ICONS.SCRUM' | translate }}</p>
     </div>
     <div class="singel-icon">
       <img src="./assets/img/icons/materialdesign.png" alt="" />
-      <p>material design</p>
+      <p>{{ 'SKILLS.ICONS.MATERIAL_DESIGN' | translate }}</p>
     </div>
     <div class="singel-icon">
       <img src="./assets/img/icons/learning.png" alt="" />
-      <p>Continually learning</p>
+      <p>{{ 'SKILLS.ICONS.LEARNING' | translate }}</p>
     </div>
   </div>
+
   <div class="my-skills">
     <div class="my-skills-header">
-      <h2>My skills</h2>
+      <h2>{{ 'SKILLS.MY_SKILLS' | translate }}</h2>
       <img src="./assets/img/short-lilaline.png" alt="" />
     </div>
 
     <div class="skill-description">
-      <p>
-        I have gained experience in building projects with different frontend
-        technologies and concepts.
-      </p>
+      <p>{{ 'SKILLS.SKILL_DESCRIPTION' | translate }}</p>
       <div>
-        <h3>Looking for <b>another skill</b>?</h3>
-        <p>
-          Feel free to contact me. I look forward to expanding on my previous
-          knowledge.
-        </p>
-        <button class="get-in-touch-btn">Get in touch</button>
+        <h3 [innerHTML]="'SKILLS.LOOKING_FOR' | translate"></h3>
+        <p>{{ 'SKILLS.CONTACT_ME' | translate }}</p>
+        <button class="get-in-touch-btn">{{ 'SKILLS.GET_IN_TOUCH' | translate }}</button>
       </div>
     </div>
   </div>

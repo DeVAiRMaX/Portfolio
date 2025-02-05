@@ -10,11 +10,12 @@ import { FeedbackComponent } from './feedback/feedback.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { trigger, state, style, animate, transition } from '@angular/animations';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, HeaderComponent, HeroComponent, AboutmeComponent, SkillsComponent, PortfolioComponent, FeedbackComponent, ContactComponent, FooterComponent],
+  imports: [TranslateModule, CommonModule, HeaderComponent, HeroComponent, AboutmeComponent, SkillsComponent, PortfolioComponent, FeedbackComponent, ContactComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   animations: [
@@ -31,6 +32,10 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   ]
 })
 export class AppComponent {
+  constructor(private translate: TranslateService) {
+    this.translate.setDefaultLang('de');
+  }
+
   aboutMeState = 'hidden';
   skillsState = 'hidden';
   portfolioState = 'hidden';
@@ -39,32 +44,32 @@ export class AppComponent {
 
   @HostListener('window:scroll', ['$event'])
   @HostListener('window:scroll', ['$event'])
-onScroll() {
-  this.checkVisibility('.about-me', (visible) => {
-    this.aboutMeState = visible ? 'visible' : 'hidden';
+  onScroll() {
+    this.checkVisibility('.about-me', (visible) => {
+      this.aboutMeState = visible ? 'visible' : 'hidden';
 
-  });
+    });
 
-  this.checkVisibility('.skills', (visible) => {
-    this.skillsState = visible ? 'visible' : 'hidden';
+    this.checkVisibility('.skills', (visible) => {
+      this.skillsState = visible ? 'visible' : 'hidden';
 
-  });
+    });
 
-  this.checkVisibility('.portfolio', (visible) => {
-    this.portfolioState = visible ? 'visible' : 'hidden';
+    this.checkVisibility('.portfolio', (visible) => {
+      this.portfolioState = visible ? 'visible' : 'hidden';
 
-  });
+    });
 
-  this.checkVisibility('.feedback', (visible) => {
-    this.feedbackState = visible ? 'visible' : 'hidden';
+    this.checkVisibility('.feedback', (visible) => {
+      this.feedbackState = visible ? 'visible' : 'hidden';
 
-  });
+    });
 
-  this.checkVisibility('.contact', (visible) => {
-    this.contactState = visible ? 'visible' : 'hidden';
+    this.checkVisibility('.contact', (visible) => {
+      this.contactState = visible ? 'visible' : 'hidden';
 
-  });
-}
+    });
+  }
 
 
   checkVisibility(selector: string, callback: (visible: boolean) => void) {

@@ -6,7 +6,7 @@
       alt=""
     />
     <img src="./assets/img/middle-lilaline.png" alt="" />
-    <h1>Portfolio</h1>
+    <h1>{{ 'portfolio.title' | translate }}</h1>
     <img src="./assets/img/long-lilaline.png" alt="" />
     <img
       class="port-responsive-line"
@@ -17,10 +17,10 @@
 
   <div class="explore">
     <p>
-      Explore a selection of my work here - Interact with projects to see my
-      skills in action.
+      {{ 'portfolio.explore' | translate }}
     </p>
   </div>
+
   <div class="project-container">
     <div class="project">
       <div class="laptop">
@@ -28,99 +28,92 @@
       </div>
       <div class="description">
         <div class="description-text">
-          <h3>Join</h3>
-          <span>Angular | TypeScript | HTML | CSS | Firebase </span>
+          <h3>{{ 'portfolio.projects.join.title' | translate }}</h3>
+          <span>{{ 'portfolio.projects.join.tech' | translate }}</span>
           <p>
-            Task manager inspired by the Kanban System. Create and organize
-            tasks using drag and drop functions, assign users and categories.
+            {{ 'portfolio.projects.join.description' | translate }}
           </p>
         </div>
         <div class="description-buttons">
-          <button class="live">Live test</button>
-          <button class="git">Github</button>
+          <button class="live">{{ 'portfolio.projects.buttons.live' | translate }}</button>
+          <button class="git">{{ 'portfolio.projects.buttons.github' | translate }}</button>
         </div>
       </div>
     </div>
 
+    <div class="project row">
+      <div class="description">
+        <div class="description-text txt-left">
+          <h3>{{ 'portfolio.projects.sharki.title' | translate }}</h3>
+          <span>{{ 'portfolio.projects.sharki.tech' | translate }}</span>
+          <p>
+            {{ 'portfolio.projects.sharki.description' | translate }}
+          </p>
+        </div>
+        <div class="description-buttons">
+          <button class="live">{{ 'portfolio.projects.buttons.live' | translate }}</button>
+          <button class="git">{{ 'portfolio.projects.buttons.github' | translate }}</button>
+        </div>
+      </div>
+      <div class="laptop">
+        <img src="./assets/img/sharki.png" alt="" />
+      </div>
+    </div>
 
-  <div class="project row">
-    <div class="description">
-      <div class="description-text txt-left">
-        <h3>Sharki</h3>
-        <span>JavaScript | HTML | CSS</span>
-        <p>
-          A simple Jump-and-Run game based on an object-oriented approach. Help
-          sharkie to find coins and poison bottles to fight against the killer
-          whale.
-        </p>
+    <div class="project">
+      <div class="laptop">
+        <img src="./assets/img/crm.png" alt="" />
       </div>
-      <div class="description-buttons">
-        <button class="live">Live test</button>
-        <button class="git">Github</button>
+      <div class="description">
+        <div class="description-text">
+          <h3>{{ 'portfolio.projects.crm.title' | translate }}</h3>
+          <span>{{ 'portfolio.projects.crm.tech' | translate }}</span>
+          <p>
+            {{ 'portfolio.projects.crm.description' | translate }}
+          </p>
+        </div>
+        <div class="description-buttons">
+          <button class="live">{{ 'portfolio.projects.buttons.live' | translate }}</button>
+          <button class="git">{{ 'portfolio.projects.buttons.github' | translate }}</button>
+        </div>
       </div>
     </div>
-    <div class="laptop">
-      <img src="./assets/img/sharki.png" alt="" />
-    </div>
-  </div>
 
-  <div class="project">
-    <div class="laptop">
-      <img src="./assets/img/crm.png" alt="" />
-    </div>
-    <div class="description">
-      <div class="description-text">
-        <h3>Simple CRM</h3>
-        <span>Angular | Firebase</span>
-        <p>
-          A very Simple Customer Relationship Management system working with
-          CRUD functionality.
-        </p>
+    <div class="project row">
+      <div class="description">
+        <div class="description-text txt-left">
+          <h3>{{ 'portfolio.projects.pokedex.title' | translate }}</h3>
+          <span>{{ 'portfolio.projects.pokedex.tech' | translate }}</span>
+          <p>
+            {{ 'portfolio.projects.pokedex.description' | translate }}
+          </p>
+        </div>
+        <div class="description-buttons">
+          <button class="live">{{ 'portfolio.projects.buttons.live' | translate }}</button>
+          <button class="git">{{ 'portfolio.projects.buttons.github' | translate }}</button>
+        </div>
       </div>
-      <div class="description-buttons">
-        <button class="live">Live test</button>
-        <button class="git">Github</button>
+      <div class="laptop">
+        <img src="./assets/img/pokemon.png" alt="" />
       </div>
     </div>
-  </div>
 
-  <div class="project row">
-    <div class="description">
-      <div class="description-text txt-left">
-        <h3>Pokédex</h3>
-        <span>JavaScript | HTML | CSS | Api</span>
-        <p>
-          Based on the PokéAPI a simple library that provides and catalogues
-          pokemon information.
-        </p>
+    <div class="project">
+      <div class="laptop">
+        <img src="./assets/img/dabooble.png" alt="" />
       </div>
-      <div class="description-buttons">
-        <button class="live">Live test</button>
-        <button class="git">Github</button>
-      </div>
-    </div>
-    <div class="laptop">
-      <img src="./assets/img/pokemon.png" alt="" />
-    </div>
-  </div>
-
-  <div class="project">
-    <div class="laptop">
-      <img src="./assets/img/dabooble.png" alt="" />
-    </div>
-    <div class="description">
-      <div class="description-text">
-        <h3>DA Bubble</h3>
-        <span>Angular | TypeScript | Firebase</span>
-        <p>
-          This App is a Slack Clone App. It revolutionizes team communication
-          and collaboration with its intuitive interface, real-time messaging,
-          and robust channel organization.
-        </p>
-      </div>
-      <div class="description-buttons">
-        <button class="live">Live test</button>
-        <button class="git">Github</button>
+      <div class="description">
+        <div class="description-text">
+          <h3>{{ 'portfolio.projects.dabooble.title' | translate }}</h3>
+          <span>{{ 'portfolio.projects.dabooble.tech' | translate }}</span>
+          <p>
+            {{ 'portfolio.projects.dabooble.description' | translate }}
+          </p>
+        </div>
+        <div class="description-buttons">
+          <button class="live">{{ 'portfolio.projects.buttons.live' | translate }}</button>
+          <button class="git">{{ 'portfolio.projects.buttons.github' | translate }}</button>
+        </div>
       </div>
     </div>
   </div>
