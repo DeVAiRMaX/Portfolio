@@ -26,6 +26,12 @@
         (click)="scrollToElement('contact', 100)"
         >Contact</a
       >
+      <div class="toggle-container" (click)="toggleLanguage()">
+        <div class="toggle-button" [class.active]="language === 'EN'">
+          {{ language }}
+        </div>
+      </div>
+
       <div
         (click)="showMenu()"
         class="burger-menu-icon"
@@ -42,28 +48,28 @@
 <div class="mobile-menu" #mobileMenu>
   <div>
     <a
-        class=""
-        href="javascript:void(0)"
-        (click)="scrollToElement('aboutMe', 100); closeMenu()"
-        >About me</a
-      >
-      <a
-        class=""
-        href="javascript:void(0)"
-        (click)="scrollToElement('skills', 100); closeMenu()"
-        >Skills</a
-      >
-      <a
-        class=""
-        href="javascript:void(0)"
-        (click)="scrollToElement('portfolio', 100); closeMenu()"
-        >Portfolio</a
-      >
-      <a
-        class=""
-        href="javascript:void(0)"
-        (click)="scrollToElement('contact', 100); closeMenu()"
-        >Contact</a
-      >
+      class=""
+      href="javascript:void(0)"
+      (click)="scrollToElement('aboutMe', 100); closeMenu()"
+      >About me</a
+    >
+    <a
+      class=""
+      href="javascript:void(0)"
+      (click)="scrollToElement('skills', 100); closeMenu()"
+      >Skills</a
+    >
+    <a
+      class=""
+      href="javascript:void(0)"
+      (click)="scrollToElement('portfolio', 100); closeMenu()"
+      >Portfolio</a
+    >
+    <a
+      class=""
+      href="javascript:void(0)"
+      (click)="scrollToElement('contact', 100); closeMenu()"
+      >Contact</a
+    >
   </div>
 </div>

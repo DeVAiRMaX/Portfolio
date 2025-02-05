@@ -15,6 +15,12 @@ export class HeaderComponent {
 
   constructor(private renderer: Renderer2) { }
 
+  language: 'DE' | 'EN' = 'DE';
+
+  toggleLanguage() {
+    this.language = this.language === 'DE' ? 'EN' : 'DE';
+  }
+
   showMenu() {
     this.isMenuOpen = !this.isMenuOpen;
     const mobileMenu = this.mobileMenu.nativeElement;
