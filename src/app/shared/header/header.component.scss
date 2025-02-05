@@ -98,8 +98,12 @@ body {
   align-items: center;
   justify-content: space-around;
   > img {
-    width: 150px;
+    width: 180px;
     cursor: pointer;
+    transition: all 0.2s ease;
+    &:hover {
+      opacity: 0.6;
+    }
   }
   > div {
     display: flex;

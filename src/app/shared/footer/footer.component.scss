@@ -19,8 +19,14 @@
   flex-direction: column;
   gap: 8px;
   > img {
-    width: 216px;
+    width: 180px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    &:hover {
+      opacity: 0.6;
+    }
   }
+
 
   > a {
     width: 98px;
