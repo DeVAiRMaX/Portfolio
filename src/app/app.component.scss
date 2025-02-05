@@ -23,13 +23,11 @@
   z-index: 3;
 }
 .about-me {
-  width: 1340px;
-  height: 532px;
+  width: 100%;
 }
 
 .skills {
-  width: 1340px;
-  height: 404px;
+  width: 100%;
 }
 
 .wrapper {
@@ -37,6 +35,11 @@
   margin: 0 auto;
   position: relative;
   margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 200px;
 }
 .space {
   display: flex;
@@ -46,46 +49,133 @@
 }
 
 .portfolio {
-  width: 1304px;
-  height: 2216.57px;
+  width: 100%;
 }
 
 .feedback {
-  width: 1340px;
-  position: absolute;
-  top: 4726px;
-  left: 100px;
+  width: 100%;
 }
 
 .conact {
-  width: 1340px;
-  height: 747px;
-  position: absolute;
-  top: 5286px;
-  left: 0;
+  width: 100%;
 }
 
 .footer {
+  // position: absolute;
+  // top: 6180px;
+}
+
+.purpleshadow1 {
   position: absolute;
-  top: 6180px;
+  z-index: 3;
+  top: 750px;
+  right: 0;
+}
+
+.greenshadow1 {
+  position: absolute;
+  top: 2000px;
+  left: 0;
+}
+
+.purpleshadow2 {
+  position: absolute;
+  top: 3355px;
+  left: 0;
+}
+
+.greenshadow2 {
+  position: absolute;
+  top: 4000px;
+  right: 0;
+}
+
+.purpleshadow3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 @media screen and (max-width: 1405px) {
-  .vector {
-    top: 207px;
-    // width: 915.31px;
-    // min-width: auto;
+  .conact {
+    width: auto;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 69px;
   }
-}
-@media screen and (max-width: 1200px) {
+
+  .feedback {
+    width: auto;
+    max-width: 100%;
+  }
+  .wrapper {
+    gap: 160px;
+  }
   .vector {
-    min-width: 915.31px;
-    top: 147px;
+    top: 291px;
+  }
+  .space {
+    gap: unset;
+    margin-top: 0;
+  }
+  .about-me {
+    width: auto;
+    height: auto;
+  }
+  .skills {
+    width: auto;
+    height: auto;
+    position: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .portfolio {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 900px) {
+  .purpleshadow1 {
+    width: 232.32px;
+    height: 415.93px;
+    top: 748px !important;
+    right: -55px !important;
+  }
+
+  .greenshadow1 {
+    width: 246.43px;
+    height: 547.06px;
+    top: 2192px !important;
+    left: -33px !important;
+  }
+
+  .purpleshadow2 {
+    width: 241.11px;
+    height: 453.22px;
+    top: 4152px !important;
+  }
+
+  .greenshadow2 {
+    top: 5815px !important;
+    width: 198.25px;
+    height: 503px;
+  }
+  .purpleshadow3 {
+    bottom: 139px !important;
+    width: 307.52px;
+    height: 448.9px;
+  }
   .vector {
-    min-width: 915.31px;
-    top: 147px;
+    top: 112px;
+  }
+  .wrapper {
+    gap: 120px;
   }
 }

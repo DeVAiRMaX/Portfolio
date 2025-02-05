@@ -17,6 +17,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: auto;
   z-index: 1;
 }
 
@@ -69,6 +70,7 @@
   display: flex;
   align-items: center;
   gap: 32px;
+  z-index: 3;
   > a {
     color: white;
     font-size: 23px;
@@ -149,6 +151,7 @@
   top: 700px;
   right: 0;
   transform: rotate(90deg);
+  z-index: 3;
   > p {
     font-family: "Poppins", serif;
     font-size: 23px;
@@ -168,16 +171,45 @@
   transform: scale(1.4);
 }
 
+@media screen and (max-width: 900px) {
+  .me {
+    width: 410.61px !important;
+    height: 448.11px !important;
+  }
+  .name-container {
+    top: -40px !important;
+    left: -22px !important;
+  }
+  .i-am {
+    font-size: 28px !important;
+    top: -4px !important;
+    left: 18px !important;
+    position: relative;
+  }
+  .name-job-2 {
+    > h2 {
+      height: auto;
+      font-size: 40px !important;
+      line-height: 40px !important;
+    }
+    > p {
+      font-size: 25px !important;
+      line-height: unset !important;
+    }
+  }
+  .hero-container {
+    gap: 36px !important;
+  }
+}
 @media screen and (max-width: 1405px) {
   .name-job-2 {
     > h2 {
       height: auto;
-      font-size: 44px;
-      line-height: unset;
+      font-size: 84px;
+      line-height: 83px;
     }
     > p {
-      font-size: 28px;
-      line-height: unset;
+      font-size: 45px;
     }
   }
   .hero-container {
@@ -191,22 +223,28 @@
     justify-content: center;
   }
   .me {
-    width: 410.61px;
-    height: 448.11px;
-    top: 30px;
+    width: 546px;
+    height: 605px;
+    left: 15px;
+    position: relative;
   }
   .name-container {
-    top: 0px;
+    top: -10px;
     width: 100vw;
     max-width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 32px;
+    position: unset;
+    left: -24px;
   }
   .name-job {
+    width: auto;
     flex-direction: row;
     align-items: center;
+    position: relative;
+    left: -13px;
     > h2 {
       height: 60px;
       font-size: 44px;
@@ -216,11 +254,10 @@
     }
   }
   .i-am {
-    width: 71px;
-    font-size: 32px;
-    top: 0;
-    left: 0;
-    position: unset;
+    font-size: 57px;
+    top: -4px;
+    left: 37px;
+    position: relative;
   }
   .talk-button {
     width: 133px;
@@ -229,4 +266,23 @@
     top: 30px;
     position: unset;
   }
+  .scroll-container {
+    // display: none;
+    z-index: 3;
+    right: -42px;
+    >p{
+      margin-block-start: 0;
+      margin-block-end: 0;
+      font-size: 20px;
+    }
+  }
+  .socials-container {
+    width: 100%;
+    position: unset;
+    z-index: 3;
+    justify-content: flex-start;
+    >a{
+      display: none
+    };
+}
 }

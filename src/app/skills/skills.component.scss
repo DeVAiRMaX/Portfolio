@@ -1,12 +1,7 @@
 .skill-container {
-  width: 1340px;
-  height: 404px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  position: absolute;
-  // top: 1850px;
-  left: 100px;
+  justify-content: space-between;
 }
 
 .icons {
@@ -115,4 +110,135 @@
 .get-in-touch-btn:hover {
   background-color: #9747ff;
   transform: scale(1.1);
+}
+.skill-description-responsive {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .icons {
+    width: 90% !important;
+  }
+  .skill-description-responsive {
+    > div {
+      >h3{
+        width: 90% !important;
+      }
+      >p{
+        width: 90% !important;
+      }
+    }
+  }
+
+  .my-skills-header {
+    > h2 {
+      font-size: 45px;
+    }
+  }
+  .skill-container {
+    width: 390px;
+  }
+  .my-skills-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+    // position: relative;
+    // left: 45px;
+  }
+  .my-skills {
+    width: 100% !important;
+  }
+  .my-skills-header {
+    justify-content: flex-end !important;
+  }
+  .icons {
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .skill-container {
+    width: unset !important;
+  }
+}
+@media screen and (max-width: 1405px) {
+  .get-in-touch-btn {
+    margin-top: 0;
+  }
+  .skill-description-responsive {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      > p {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: right;
+        color: white;
+        margin: 0;
+      }
+      > h3 {
+        width: 100%;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: right;
+        color: white;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        > b {
+          color: #9747ff;
+        }
+      }
+      > p {
+        font-size: 16px;
+        font-weight: 400;
+        text-align: right;
+        color: white;
+        margin: 0;
+      }
+    }
+  }
+  .my-skills-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+  }
+  .skill-container {
+    width: 70%;
+    height: unset;
+    flex-direction: column-reverse;
+    position: unset;
+    gap: 32px;
+  }
+  .my-skills {
+    width: unset;
+    height: unset;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+  }
+  .skill-description {
+    padding-right: 77px;
+  }
+  .skill-description {
+    > div {
+      display: none;
+    }
+  }
+  .icons {
+    width: unset;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .singel-icon {
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }

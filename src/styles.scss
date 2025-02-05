@@ -1,10 +1,19 @@
 $global-darkblue: #141d2f;
-$global-green: #70E61C;
-$global-purple: #9747FF;
+$global-green: #70e61c;
+$global-purple: #9747ff;
 
 body {
   margin: 0;
   background-color: $global-darkblue;
   overflow-x: hidden;
   font-family: "Poppins", serif;
+}
+
+.center-screen {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  // max-width: 100%;
+  overflow-x: hidden;
 }
