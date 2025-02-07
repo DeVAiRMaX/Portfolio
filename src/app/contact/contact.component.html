@@ -1,74 +1,104 @@
 <div class="contact-container">
   <div class="contact-header">
-    <img class="short-lilaline-contact" src="./assets/img/bigshortline.png" alt="">
+    <img
+      class="short-lilaline-contact"
+      src="./assets/img/bigshortline.png"
+      alt=""
+    />
     <img src="./assets/img/lilacommentline.png" alt="" />
-    <h1>{{ 'contact.title' | translate }}</h1>
+    <h1>{{ "contact.title" | translate }}</h1>
   </div>
 
   <div class="contact-section">
     <div class="description">
-      <h3>{{ 'contact.problem' | translate }}</h3>
+      <h3>{{ "contact.problem" | translate }}</h3>
       <p>
-        {{ 'contact.introduction' | translate }}
+        {{ "contact.introduction" | translate }}
       </p>
 
-      <p>{{ 'contact.frontendDev' | translate }}</p>
+      <p>{{ "contact.frontendDev" | translate }}</p>
     </div>
 
-    <div class="form">
+    <form class="form" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
       <input
+        name="name"
+        id="name"
+        [(ngModel)]="contactData.name"
         type="text"
-        [class.focused]="isNameFocused"
-        (focus)="onFocus('name')"
-        (blur)="onBlur('name')"
-        (input)="onInput($event, 'name')"
         placeholder="{{ 'contact.form.namePlaceholder' | translate }}"
+        required
+        #name="ngModel"
+        [class.error-feedback]="!name.valid && name.touched"
+        [class.success-feedback]="name.valid"
       />
-      <div class="error-message" [class.visible]="isNameFocused && !nameValue">
-        {{ 'contact.form.nameRequired' | translate }}
-      </div>
+      @if (!name.valid && name.touched) {
+      <span class="error-message">
+        {{ "contact.form.nameRequired" | translate }}
+      </span>
+      }
 
       <input
+        name="email"
+        id="email"
         type="email"
-        [class.focused]="isEmailFocused"
-        (focus)="onFocus('email')"
-        (blur)="onBlur('email')"
-        (input)="onInput($event, 'email')"
+        [(ngModel)]="contactData.email"
         placeholder="{{ 'contact.form.emailPlaceholder' | translate }}"
+        required
+        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+        #email="ngModel"
+        [class.error-feedback]="!email.valid && email.touched"
+        [class.success-feedback]="email.valid"
       />
-      <div
-        class="error-message"
-        [class.visible]="isEmailFocused && !emailValue"
-      >
-        {{ 'contact.form.emailRequired' | translate }}
-      </div>
+      @if (!email.valid && email.touched) {
+      <span class="error-message">
+        {{ "contact.form.emailRequired" | translate }}
+      </span>
+      }
 
       <textarea
-        [class.focused]="isMessageFocused"
-        (focus)="onFocus('message')"
-        (blur)="onBlur('message')"
-        (input)="onInput($event, 'message')"
+        name="message"
+        id="message"
+        [(ngModel)]="contactData.message"
+        minlength="4"
         placeholder="{{ 'contact.form.messagePlaceholder' | translate }}"
+        required
+        #message="ngModel"
+        [class.error-feedback]="!message.valid && message.touched"
+        [class.success-feedback]="message.valid"
       ></textarea>
-      <div
-        class="error-message"
-        [class.visible]="isMessageFocused && !messageValue"
-      >
-        {{ 'contact.form.messageRequired' | translate }}
-      </div>
+
+      @if (!message.valid && message.touched) {
+      <span class="error-message">
+        {{ "contact.form.messageRequired" | translate }}
+      </span>
+      }
+
       <div class="policy-container">
         <div class="policy-check">
           <label class="checkbox-container">
-            <input type="checkbox" />
-            <span class="checkbox-custom"></span>
+            <input
+              type="checkbox"
+              id="policy"
+              [(ngModel)]="isPolicyChecked"
+              name="policy"
+              #policy="ngModel"
+              required
+            />
+            <span
+              class="checkbox-custom"
+              [class.error-feedback]="!policy.valid"
+            ></span>
           </label>
-          <p>
-            {{ 'contact.form.policyText' | translate }}
-          </p>
+          <p>{{ "contact.form.policyText" | translate }}</p>
         </div>
-        <button class="sendmsg-button">{{ 'contact.form.sendButton' | translate }}</button>
+        <button
+          class="sendmsg-button"
+          [disabled]="!contactForm.valid || !isPolicyChecked"
+        >
+          {{ "contact.form.sendButton" | translate }}
+        </button>
       </div>
-    </div>
+    </form>
     <div class="scroll-up-icon" (click)="scrollToTop()"></div>
   </div>
 </div>

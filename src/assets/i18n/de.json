@@ -78,7 +78,7 @@
         "emailPlaceholder": "Ihre E-Mail",
         "emailRequired": "Ihre E-Mail wird benötigt",
         "messagePlaceholder": "Ihre Nachricht",
-        "messageRequired": "Ihre Nachricht wird benötigt",
+        "messageRequired": "Nachricht darf nicht leer sein. Mind. 4 Zeichen!",
         "policyText": "Ich habe die Datenschutzrichtlinie gelesen und stimme der Verarbeitung meiner Daten wie dargelegt zu.",
         "sendButton": "Nachricht senden :)"
       }

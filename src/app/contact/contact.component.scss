@@ -46,6 +46,7 @@
   width: 617px;
   display: flex;
   flex-direction: column;
+  gap: 16px;
 }
 
 input {
@@ -68,29 +69,21 @@ input::placeholder {
   font-family: "Poppins", serif;
 }
 
-input.focused {
+input.error-feedback {
   background-image: url(../../assets/img/input-error.png);
   background-repeat: no-repeat;
   background-position: right 16px top 50%;
   border-color: red;
 }
-
-.error-message {
+input.error-feedback::placeholder {
   color: red;
-  font-size: 13px;
-  margin-top: 5px;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-20px);
-  transition: all 0.3s ease;
 }
 
-.error-message.visible {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-  margin-bottom: 16px;
-  transition: all 0.3s ease;
+input.success-feedback {
+  background-image: url(../../assets/img/input-accept.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: right 16px top 50% !important;
+  border-color: #70e61c !important;
 }
 
 textarea {
@@ -117,29 +110,47 @@ textarea::placeholder {
   font-family: "Poppins", serif;
 }
 
-textarea.focused {
+textarea.error-feedback {
   border-color: red;
   background-image: url(../../assets/img/input-error.png);
   background-repeat: no-repeat;
   background-position: right 16px top 16px;
 }
 
-.error-message {
+textarea.error-feedback::placeholder {
   color: red;
-  font-size: 13px;
-  margin-top: 5px;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-20px);
-  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
 }
 
-.error-message.visible {
+textarea.success-feedback {
+  background-image: url(../../assets/img/input-accept.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: right 16px top 16px !important;
+  border-color: #70e61c !important;
+}
+
+.error-message {
+  // height: 0px;
+  color: red;
+  font-size: 14px;
+  margin: 4px 0;
   opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-  margin-bottom: 16px;
-  transition: all 0.3s ease;
+  transform: translateY(0px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+  animation: fadeInError 0.75s ease forwards;
+  position: relative;
+  bottom: 14px;
+  height: 0px;
+}
+
+@keyframes fadeInError {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .policy-container {
@@ -182,8 +193,11 @@ textarea.focused {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease;
   background-color: transparent;
+}
+
+span.error-feedback {
+  border: 2px solid red !important;
 }
 
 .checkbox-container input:checked + .checkbox-custom::after {
@@ -229,7 +243,7 @@ textarea.focused {
 .short-lilaline-contact {
   display: none;
 }
-.contact-container{
+.contact-container {
   display: flex;
   flex-direction: column;
   gap: 40px;

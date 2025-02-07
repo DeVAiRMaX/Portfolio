@@ -35,7 +35,7 @@ body {
 }
 
 .mobile-menu.show {
-  right: 0; /* move it back to the original position */
+  right: 0;
 }
 
 .mobile-menu {
@@ -45,8 +45,8 @@ body {
   width: 100vw;
   max-width: 100%;
   height: 100vh;
-  right: -100vw; /* move it off-screen to the right */
-  transition: right 0.3s ease-in-out; /* add transition effect */
+  right: -100vw;
+  transition: right 0.3s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,25 +84,22 @@ body {
     height: 2px;
     background-color: white;
     border-radius: 4px;
-    transition: all 0.5s ease; /* Verlangsamt die Transition */
+    transition: all 0.5s ease; 
   }
 
   &.open {
-    /* Erstes Line (oben) */
     .burger-line:nth-child(1) {
-      transform: rotate(45deg); /* Drehung um 45 Grad */
+      transform: rotate(45deg);
       position: absolute;
       top: 0;
     }
 
-    /* Zweites Line (Mitte) wird unsichtbar gemacht */
     .burger-line:nth-child(2) {
       opacity: 0;
     }
 
-    /* Drittes Line (unten) */
     .burger-line:nth-child(3) {
-      transform: rotate(-45deg); /* Drehung um -45 Grad */
+      transform: rotate(-45deg);
       position: absolute;
       bottom: 0;
     }
@@ -134,7 +131,7 @@ body {
   }
   > div {
     display: flex;
-    gap: 12px;
+    gap: 32px;
     align-items: center;
     justify-content: center;
     > a {
@@ -151,7 +148,7 @@ body {
 
 a.navbar-link {
   text-decoration: none;
-  color: white; // oder deine gewünschte Farbe
+  color: white;
 
   &:hover {
     text-decoration: none;
@@ -163,10 +160,10 @@ a.navbar-link {
       position: absolute;
       left: 0;
       bottom: -2px;
-      width: 0; // anfangs keine Breite
-      border-bottom: 3px solid $global-purple; // lila Farbe
+      width: 0;
+      border-bottom: 3px solid $global-purple;
       border-radius: 3px;
-      transition: width 0.5s ease-in-out; // Animation
+      transition: width 0.5s ease-in-out;
 
       @keyframes animate {
         0% {
@@ -185,7 +182,6 @@ a.navbar-link {
 .burger-menu-icon {
   display: none;
   flex-direction: column;
-  // justify-content: space-between;
   height: 19px;
   width: 30px;
   cursor: pointer;
