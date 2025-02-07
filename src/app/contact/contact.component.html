@@ -91,6 +91,11 @@
           </label>
           <p>{{ "contact.form.policyText" | translate }}</p>
         </div>
+        <div *ngIf="showFeedback" class="mailFeedback">
+          <div>
+            <p>Nachricht erfolgreich versendet!</p>
+          </div>
+        </div>
         <button
           class="sendmsg-button"
           [disabled]="!contactForm.valid || !isPolicyChecked"

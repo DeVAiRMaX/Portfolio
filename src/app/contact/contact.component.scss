@@ -248,6 +248,25 @@ span.error-feedback {
   flex-direction: column;
   gap: 40px;
 }
+
+.mailFeedback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    > p {
+      color: #70e61c;
+      font-size: 16px;
+      font-weight: 400;
+      margin: 0;
+    }
+  }
+}
+
 @media screen and (max-width: 900px) {
   .contact-container {
     width: 100% !important;

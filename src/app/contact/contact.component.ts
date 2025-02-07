@@ -21,11 +21,12 @@ export class ContactComponent {
     message: "",
   };
   isPolicyChecked: boolean = false;
+  showFeedback = false;
 
   mailTest = true;
 
   post = {
-    endPoint: 'https://maximilian-wagener.de/sendMail.php',
+    endPoint: 'http://maximilian-wagener.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -36,24 +37,30 @@ export class ContactComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && this.isPolicyChecked && !this.mailTest) {
+    if (ngForm.submitted && ngForm.form.valid && this.isPolicyChecked) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-// hier kann noch alles rein, was noch passieren soll z.B feedback an Nutzer das Mail gesendet wurde?
-            ngForm.resetForm();
+            this.showFeedback = true;
+            setTimeout(() => {
+              ngForm.resetForm();
+              this.showFeedback = false;
+            }, 2000);
           },
           error: (error) => {
             console.error(error);
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.isPolicyChecked && this.mailTest) {
-      console.log("Hat geklappt!");
-      
-      ngForm.resetForm();
+    } 
+    // else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
 
-    }
+    //   this.showFeedback = true;
+    //         setTimeout(() => {
+    //           ngForm.resetForm();
+    //           this.showFeedback = false;
+    //         }, 150000);
+    // }
   }
 
   scrollToTop(): void {
