@@ -65,7 +65,9 @@
       <div>
         <h3 [innerHTML]="'SKILLS.LOOKING_FOR' | translate"></h3>
         <p>{{ 'SKILLS.CONTACT_ME' | translate }}</p>
-        <button class="get-in-touch-btn">{{ 'SKILLS.GET_IN_TOUCH' | translate }}</button>
+        <button class="get-in-touch-btn" href="javascript:void(0)"
+        (click)="scrollToElement('contact', 100)"
+        >{{ 'SKILLS.GET_IN_TOUCH' | translate }}</button>
       </div>
     </div>
   </div>
