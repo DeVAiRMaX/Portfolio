@@ -99,5 +99,26 @@
     "job": "Frontend Developer",
     "letstalk": "Let's talk!",
     "scrollDown": "Scroll down"
-  }
+  },
+    "impressum": {
+      "title": "Legal Notice",
+      "infoTitle": "Information pursuant to § 5 TMG (German Telemedia Act):",
+      "address": "Ismail Mohamed Masmoudi, Moosburgerstr 10, 80993 Munich, Germany",
+      "contactTitle": "Contact:",
+      "email": "Email: contactismail-masmoudi.com",
+      "disclaimerTitle": "Disclaimer:",
+      "disclaimerText": "The content of this website has been created with the greatest possible care. However, I cannot guarantee that the content is accurate, complete, or up-to-date. As a service provider, I am responsible for my own content on these pages in accordance with general laws pursuant to Section 7 (1) of the German Telemedia Act (TMG). However, according to Sections 8 to 10 of the TMG, service providers are not obligated to permanently monitor submitted or stored information or to search for evidence that indicates illegal activity. Legal obligations to remove information or to block the use of information remain unaffected. In this case, liability is only possible from the moment of knowledge of a specific infringement. Upon notification of appropriate violations, I will remove this content immediately.",
+      "liabilityLinksTitle": "Liability for Links:",
+      "liabilityLinksText": "My website contains links to external websites of third parties over whose content I have no influence. Therefore, I cannot assume any liability for these external contents. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognizable at the time of linking. However, a permanent control of the content of the linked pages is not reasonable without concrete evidence of an infringement. Upon notification of violations, I will remove such links immediately.",
+      "copyrightTitle": "Copyright:",
+      "copyrightText": "The content and works on these pages created by the website operator are subject to German copyright law. The reproduction, processing, distribution, and any kind of exploitation outside the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use. As far as the content on this site was not created by the operator, the copyrights of third parties are respected. In particular, contents of third parties are marked as such. Should you still become aware of a copyright infringement, I request that you notify me accordingly. Upon notification of violations, I will remove such content immediately.",
+      "liabilityTitle": "Liability:",
+      "liabilityText": "We shall not be liable for any loss or damage arising from or in connection with the use of this website, including but not limited to, direct, indirect, incidental, consequential, or punitive damages.",
+      "governingLawTitle": "Governing Law:",
+      "governingLawText": "This legal notice and your use of this website shall be governed by and construed in accordance with the laws of Germany, and any disputes relating to these terms and conditions will be subject to the exclusive jurisdiction of the courts of Germany.",
+      "changesTitle": "Changes to this Legal Notice:",
+      "changesText": "We reserve the right to modify this legal notice at any time. The current version will always be accessible on this page.",
+      "privacyTitle": "Privacy:",
+      "privacyText": "We take the protection of your personal data very seriously. For detailed information about the nature, scope, and purpose of the collection and use of your data, as well as your rights and privacy protection options, please refer to our detailed Privacy Policy."
+    }  
 }

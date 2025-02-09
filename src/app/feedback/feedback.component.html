@@ -2,23 +2,24 @@
   <div class="comment-container">
     <div class="comment-section">
       <div class="comment">
-        <p>
-          {{ 'feedback.comment.text' | translate }}
+        <p id="comment">
+          {{ comments[currentIndex].text }}
         </p>
         <div class="author">
-            <img src="./assets/img/commentline.png" alt="">
-            <p>{{ 'feedback.comment.author' | translate }}</p>
+          <img src="./assets/img/commentline.png" alt="" />
+          <p>{{ comments[currentIndex].author }}</p>
         </div>
       </div>
-      <img src="./assets/img/usercomment.png" alt="" />
+      <img [src]="comments[currentIndex].image" alt="comment image" />
     </div>
     <div class="arrows-container">
-        <div class="leftarrow"></div>
-        <img  class="dot" src="./assets/img/aktiv-slide-dot.png" alt="">
-        <img class="dot" src="./assets/img/slide-dot.png" alt="">
-        <img class="dot" src="./assets/img/slide-dot.png" alt="">
-        <img class="rightarrow" src="./assets/img/rightarrow.png" alt="">
+      <div class="leftarrow" (click)="goToPreviousComment()"></div>
+      <img *ngFor="let dot of comments; let i = index" 
+         class="dot" 
+         [src]="currentIndex === i ? './assets/img/aktiv-slide-dot.png' : './assets/img/slide-dot.png'" 
+         alt="dot" />
+      <div class="rightarrow" (click)="goToNextComment()"></div>
     </div>
   </div>
-  <img src="./assets/img/comment.png" alt="">
+  <img src="./assets/img/comment.png" alt="" />
 </div>

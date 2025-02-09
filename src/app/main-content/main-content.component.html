@@ -1,0 +1,34 @@
+<div class="landingpage">
+<img class="vector" src="./assets/img/vectorshape.png" alt="" />
+
+  <app-hero class="hero"></app-hero>
+
+  <app-aboutme
+    class="about-me"
+    id="aboutMe"
+    [@scrollAnimation]="aboutMeState"
+  ></app-aboutme>
+  <app-skills
+    class="skills"
+    id="skills"
+    [@scrollAnimationRight]="skillsState"
+  ></app-skills>
+
+  <app-portfolio
+    id="portfolio"
+    class="portfolio"
+    [@scrollAnimation]="portfolioState"
+  ></app-portfolio>
+
+  <app-feedback
+    class="feedback"
+    id="feedback"
+    [@scrollAnimationRight]="feedbackState"
+  ></app-feedback>
+  <app-contact
+    class="contact"
+    id="contact"
+    [@scrollAnimation]="contactState"
+  ></app-contact>
+
+</div>

@@ -2,7 +2,7 @@
   <div class="footer-section">
     <div class="footer-logo">
       <img src="./assets/img/footer-logo.png" alt="" />
-      <a routerlink="/app-impressum">{{ "footer.legalNotice" | translate }}</a>
+      <a [routerLink]="['/app-impressum']" (click)="scrollToTop()">{{ "footer.legalNotice" | translate }}</a>
     </div>
     <div class="footer-copyright">
       <p>© {{ "footer.copyright" | translate }}</p>

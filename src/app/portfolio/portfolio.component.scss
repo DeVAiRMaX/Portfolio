@@ -70,7 +70,7 @@
 .description-buttons {
   display: flex;
   align-items: center;
-  gap: 86px;
+  justify-content: space-between;
 }
 .live {
   height: 58px;

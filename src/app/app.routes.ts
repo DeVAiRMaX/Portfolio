@@ -1,14 +1,9 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 import { ImpressumComponent } from './shared/impressum/impressum.component';
+import { MainContentComponent } from './main-content/main-content.component';
+
 
 export const routes: Routes = [
+  { path: '', component: MainContentComponent },
   { path: 'app-impressum', component: ImpressumComponent },
 ];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-
-export class AppRoutingModule { }

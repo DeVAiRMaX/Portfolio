@@ -1,0 +1,38 @@
+.impressum-container {
+  position: relative;
+  z-index: 5;
+  >div{
+    > h2 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #9747ff;
+      }
+      > h3 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #70e61c;
+      }
+      >p{
+        font-size: 16px;
+        font-weight: 400;
+        color: white;
+      }
+  }
+}
+
+.impressum-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+  > img {
+    border-radius: 25px;
+  }
+  > h1 {
+    font-size: 90px;
+    font-weight: 700;
+    color: white;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+}

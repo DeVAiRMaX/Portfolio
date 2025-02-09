@@ -3,28 +3,33 @@
     <img src="./assets/img/header-logo.png" alt="" />
     <div>
       <a
+        [routerLink]="['/']"
         class="navbar-link"
         href="javascript:void(0)"
-        (click)="scrollToElement('aboutMe', 100)"
-        >{{ 'header.aboutMe' | translate }}</a
+        (click)="navigateAndScroll('aboutMe')"
+      >
+        {{ "header.aboutMe" | translate }}
+      </a>
+      <a
+        [routerLink]="['/']"
+        class="navbar-link"
+        href="javascript:void(0)"
+        (click)="navigateAndScroll('skills')"
+        >{{ "header.skills" | translate }}</a
       >
       <a
+        [routerLink]="['/']"
         class="navbar-link"
         href="javascript:void(0)"
-        (click)="scrollToElement('skills', 100)"
-        >{{ 'header.skills' | translate }}</a
+        (click)="navigateAndScroll('portfolio')"
+        >{{ "header.portfolio" | translate }}</a
       >
       <a
+        [routerLink]="['/']"
         class="navbar-link"
         href="javascript:void(0)"
-        (click)="scrollToElement('portfolio', 100)"
-        >{{ 'header.portfolio' | translate }}</a
-      >
-      <a
-        class="navbar-link"
-        href="javascript:void(0)"
-        (click)="scrollToElement('contact', 100)"
-        >{{ 'header.contact' | translate }}</a
+        (click)="navigateAndScroll('contact')"
+        >{{ "header.contact" | translate }}</a
       >
       <div class="toggle-container" (click)="toggleLanguage()">
         <div class="toggle-button" [class.active]="language === 'EN'">
@@ -51,25 +56,25 @@
       class=""
       href="javascript:void(0)"
       (click)="scrollToElement('aboutMe', 100); closeMenu()"
-      >{{ 'header.aboutMe' | translate }}</a
+      >{{ "header.aboutMe" | translate }}</a
     >
     <a
       class=""
       href="javascript:void(0)"
       (click)="scrollToElement('skills', 100); closeMenu()"
-      >{{ 'header.skills' | translate }}</a
+      >{{ "header.skills" | translate }}</a
     >
     <a
       class=""
       href="javascript:void(0)"
       (click)="scrollToElement('portfolio', 100); closeMenu()"
-      >{{ 'header.portfolio' | translate }}</a
+      >{{ "header.portfolio" | translate }}</a
     >
     <a
       class=""
       href="javascript:void(0)"
       (click)="scrollToElement('contact', 100); closeMenu()"
-      >{{ 'header.contact' | translate }}</a
+      >{{ "header.contact" | translate }}</a
     >
   </div>
 </div>
