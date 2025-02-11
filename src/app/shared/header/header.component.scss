@@ -35,7 +35,7 @@ body {
 }
 
 .mobile-menu.show {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   z-index: 900;
@@ -43,7 +43,7 @@ body {
 
 .mobile-menu {
   position: absolute;
- 
+  z-index: 999;
   background-color: #141d2fc9;
   width: 100vw;
   max-width: 100%;
