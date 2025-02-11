@@ -1,13 +1,13 @@
 {
 	"ABOUT_ME": {
-		"CHALLENGE": "I am open-minded and always looking for personal challenges to constantly improve my knowledge and skills.",
+		"CHALLENGE": "I am open to new things and always looking for personal challenges to continuously expand and deepen my knowledge and skills.",
 		"HEADER": "About me",
-		"INTRO": "Hi, I’m a german speaking Frontend Developer based near Munich...",
-		"LOCATION": "Flexible in terms of working environments, I can work effectively both on-site in Munich and remotely.",
-		"PROBLEM_SOLVING": "In my profession, programming isn't just about writing code; it's a creative form of problem-solving..."
+		"INTRO": "Hello, I am a German-speaking frontend developer from the region around Siegen.",
+		"LOCATION": "Flexible in terms of working environments, I can work effectively both on site in Siegen and the surrounding area as well as remotely.",
+		"PROBLEM_SOLVING": "In my job, programming is not just about writing code - it's a creative way of solving problems."
 	},
 	"SKILLS": {
-		"CONTACT_ME": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
+		"CONTACT_ME": "Please feel free to contact me. I look forward to expanding my knowledge and gaining new experience.",
 		"GET_IN_TOUCH": "Get in touch",
 		"ICONS": {
 			"ANGULAR": "angular",
@@ -22,13 +22,13 @@
 			"SCRUM": "scrum",
 			"TYPESCRIPT": "typescript"
 		},
-		"LOOKING_FOR": "Looking for <b>another skill</b>?",
+		"LOOKING_FOR": "Looking for another skill?",
 		"MY_SKILLS": "My skills",
 		"SKILL_DESCRIPTION": "I have gained experience in building projects with different frontend technologies and concepts."
 	},
   "portfolio": {
     "title": "Portfolio",
-    "explore": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+    "explore": "Discover a selection of my projects here - interact with them to experience my skills live.",
     "projects": {
       "join": {
         "title": "Join",
@@ -36,14 +36,9 @@
         "description": "Task manager inspired by the Kanban system. Create and organize tasks using drag-and-drop functions, assign users and categories."
       },
       "sharki": {
-        "title": "Sharki",
+        "title": "El pollo Loco",
         "tech": "JavaScript | HTML | CSS",
-        "description": "A simple Jump-and-Run game based on an object-oriented approach. Help Sharki to find coins and poison bottles to fight against the killer whale."
-      },
-      "crm": {
-        "title": "Simple CRM",
-        "tech": "Angular | Firebase",
-        "description": "A very simple Customer Relationship Management system working with CRUD functionality."
+        "description": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and Tabasco-Flaschen to fight against the killer chicken."
       },
       "pokedex": {
         "title": "Pokédex",
@@ -70,7 +65,7 @@
     "contact": {
       "title": "Contact",
       "problem": "Got a problem to solve?",
-      "introduction": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+      "introduction": "Please use this form to contact me. I look forward to hearing from you, getting to know your ideas and contributing to your projects with my work.",
       "frontendDev": "Need a Frontend developer? Contact me!",
       "form": {
         "namePlaceholder": "Your name",
@@ -80,12 +75,12 @@
         "messagePlaceholder": "Your message",
         "messageRequired": "Message must not be empty. At least 4 characters!",
         "policyText": "I've read the privacy policy and agree to the processing of my data as outlined.",
-        "sendButton": "Send message :)"
+        "sendButton": "Send message"
       }
     },
     "footer": {
     "legalNotice": "Legal Notice",
-    "copyright": "Dominik Roth 2024"
+    "copyright": "Maximilian Wagener 2024"
   },
   "header": {
     "aboutMe": "About me",
@@ -103,9 +98,9 @@
     "impressum": {
       "title": "Legal Notice",
       "infoTitle": "Information pursuant to § 5 TMG (German Telemedia Act):",
-      "address": "Ismail Mohamed Masmoudi, Moosburgerstr 10, 80993 Munich, Germany",
+      "address": "Maximilian Wagener, 57234 Wilnsdorf, Wiesenrainsgarten 13,Germany",
       "contactTitle": "Contact:",
-      "email": "Email: contactismail-masmoudi.com",
+      "email": "Email: maxiwagener@web.de",
       "disclaimerTitle": "Disclaimer:",
       "disclaimerText": "The content of this website has been created with the greatest possible care. However, I cannot guarantee that the content is accurate, complete, or up-to-date. As a service provider, I am responsible for my own content on these pages in accordance with general laws pursuant to Section 7 (1) of the German Telemedia Act (TMG). However, according to Sections 8 to 10 of the TMG, service providers are not obligated to permanently monitor submitted or stored information or to search for evidence that indicates illegal activity. Legal obligations to remove information or to block the use of information remain unaffected. In this case, liability is only possible from the moment of knowledge of a specific infringement. Upon notification of appropriate violations, I will remove this content immediately.",
       "liabilityLinksTitle": "Liability for Links:",

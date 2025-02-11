@@ -43,18 +43,18 @@ app-main-content {
   max-width: 1440px;
   margin: 0 auto;
   margin-top: 100px;
-  margin-bottom: 200px;
+  margin-bottom: 120px;
 }
 
 @media screen and (max-width: 1405px) {
   .wrapper {
-    gap: 160px;
+    margin-bottom: 0;
   }
 }
 
 @media screen and (max-width: 900px) {
   .wrapper {
-    gap: 120px;
+    margin-bottom: 0;
   }
   .purpleshadow1 {
     width: 232.32px;

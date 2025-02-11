@@ -11,6 +11,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
+  email: string = 'maxiwagener@web.de';
   scrollToElement(elementId: string, offset: number = 0): void {
     const element = document.getElementById(elementId);
     if (element) {
