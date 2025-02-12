@@ -45,35 +45,41 @@ export class MainContentComponent {
   feedbackState = 'hidden';
   contactState = 'hidden';
 
-  @HostListener('window:scroll', ['$event'])
-  @HostListener('window:scroll', ['$event'])
-  onScroll() {
-    this.checkVisibility('.about-me', (visible) => {
-      this.aboutMeState = visible ? 'visible' : 'hidden';
-
-    });
-
-    this.checkVisibility('.skills', (visible) => {
-      this.skillsState = visible ? 'visible' : 'hidden';
-
-    });
-
-    this.checkVisibility('.portfolio', (visible) => {
-      this.portfolioState = visible ? 'visible' : 'hidden';
-
-    });
-
-    this.checkVisibility('.feedback', (visible) => {
-      this.feedbackState = visible ? 'visible' : 'hidden';
-
-    });
-
-    this.checkVisibility('.contact', (visible) => {
-      this.contactState = visible ? 'visible' : 'hidden';
-
-    });
+  ngOnInit() {
+    // Beim Initialisieren der Komponente prüfen, ob die Bildschirmbreite <= 450px ist
+    if (window.innerWidth <= 450) {
+      this.aboutMeState = 'visible';
+      this.skillsState = 'visible';
+      this.portfolioState = 'visible';
+      this.feedbackState = 'visible';
+      this.contactState = 'visible';
+    }
   }
 
+  @HostListener('window:scroll', ['$event'])
+  onScroll() {
+    if (window.innerWidth > 450) {
+      this.checkVisibility('.about-me', (visible) => {
+        this.aboutMeState = visible ? 'visible' : 'hidden';
+      });
+
+      this.checkVisibility('.skills', (visible) => {
+        this.skillsState = visible ? 'visible' : 'hidden';
+      });
+
+      this.checkVisibility('.portfolio', (visible) => {
+        this.portfolioState = visible ? 'visible' : 'hidden';
+      });
+
+      this.checkVisibility('.feedback', (visible) => {
+        this.feedbackState = visible ? 'visible' : 'hidden';
+      });
+
+      this.checkVisibility('.contact', (visible) => {
+        this.contactState = visible ? 'visible' : 'hidden';
+      });
+    }
+  }
 
   checkVisibility(selector: string, callback: (visible: boolean) => void) {
     const element = document.querySelector(selector);

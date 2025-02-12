@@ -53,28 +53,30 @@
 <div class="mobile-menu" #mobileMenu>
   <div>
     <a
-      class=""
-      href="javascript:void(0)"
-      (click)="scrollToElement('aboutMe', 100); closeMenu()"
-      >{{ "header.aboutMe" | translate }}</a
-    >
-    <a
-      class=""
-      href="javascript:void(0)"
-      (click)="scrollToElement('skills', 100); closeMenu()"
-      >{{ "header.skills" | translate }}</a
-    >
-    <a
-      class=""
-      href="javascript:void(0)"
-      (click)="scrollToElement('portfolio', 100); closeMenu()"
-      >{{ "header.portfolio" | translate }}</a
-    >
-    <a
-      class=""
-      href="javascript:void(0)"
-      (click)="scrollToElement('contact', 100); closeMenu()"
-      >{{ "header.contact" | translate }}</a
-    >
+        [routerLink]="['/']"
+        href="javascript:void(0)"
+        (click)="navigateAndScroll('aboutMe'); showMenu()"
+
+      >
+        {{ "header.aboutMe" | translate }}
+      </a>
+      <a
+        [routerLink]="['/']"
+        href="javascript:void(0)"
+        (click)="navigateAndScroll('skills'); showMenu()"
+        >{{ "header.skills" | translate }}</a
+      >
+      <a
+        [routerLink]="['/']"
+        href="javascript:void(0)"
+        (click)="navigateAndScroll('portfolio'); showMenu()"
+        >{{ "header.portfolio" | translate }}</a
+      >
+      <a
+        [routerLink]="['/']"
+        href="javascript:void(0)"
+        (click)="navigateAndScroll('contact'); showMenu()"
+        >{{ "header.contact" | translate }}</a
+      >
   </div>
 </div>

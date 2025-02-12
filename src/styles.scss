@@ -16,7 +16,8 @@ body {
 .center-screen {
   position: absolute;
   width: 100vw;
-  // overflow: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {

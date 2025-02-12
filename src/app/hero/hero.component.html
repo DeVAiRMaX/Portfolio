@@ -1,42 +1,50 @@
 <div class="hero-container">
-  <div class="me-container">
-    <img class="me-bg" src="./assets/img/charbg.png" alt="" />
-    <img class="me" src="./assets/img/char.png" alt="" />
-  </div>
+  <div class="hero">
+    <div class="me-container">
+      <img class="me-bg" src="./assets/img/charbg.png" alt="" />
+      <img class="me" src="./assets/img/char.png" alt="" />
+    </div>
 
-  <div class="name-container">
-    <div class="name-job">
-      <div class="i-am">
-        <p>I am</p>
+    <div class="name-container">
+      <div class="name-job">
+        <div class="i-am">
+          <p>I am</p>
+        </div>
+        <div class="name-job-2">
+          <h2>Max Wagener</h2>
+          <p>Frontend Developer</p>
+        </div>
       </div>
-      <div class="name-job-2">
-        <h2>Max Wagener</h2>
-        <p>Frontend Developer</p>
+      <div class="talk-button-container">
+        <button
+          class="talk-button"
+          href="javascript:void(0)"
+          (click)="scrollToElement('contact', 100)"
+        >
+          {{ "hero.letstalk" | translate }}
+        </button>
       </div>
     </div>
-    <div class="talk-button-container">
-      <button class="talk-button" href="javascript:void(0)"
-      (click)="scrollToElement('contact', 100)">{{ "hero.letstalk" | translate }}</button>
+  </div>
+  <div class="socials">
+    <div class="socials-container">
+      <img src="./assets/img/lilaline.png" alt="" />
+      <a href="https://github.com/DeVAiRMaX" target="_blank"
+        ><img class="hovereffect" src="./assets/img/github.png" alt=""
+      /></a>
+      <a href="mailto:maxiwagener@web.de"
+        ><img class="hovereffect" src="./assets/img/mail.png" alt=""
+      /></a>
+      <a href="https://de.linkedin.com/" target="_blank"
+        ><img class="hovereffect" src="./assets/img/linkedin.png" alt=""
+      /></a>
+      <a class="mail" [href]="'mailto:' + email">{{ email }}</a>
     </div>
-  </div>
-
-  <div class="socials-container">
-    <img src="./assets/img/lilaline.png" alt="" />
-    <a href="https://github.com/DeVAiRMaX" target="_blank"
-      ><img class="hovereffect" src="./assets/img/github.png" alt=""
-    /></a>
-    <a href="mailto:maxiwagener@web.de"
-      ><img class="hovereffect" src="./assets/img/mail.png" alt=""
-    /></a>
-    <a href="https://de.linkedin.com/" target="_blank"
-      ><img class="hovereffect" src="./assets/img/linkedin.png" alt=""
-    /></a>
-    <a class="mail" [href]="'mailto:' + email">{{ email }}</a>
-  </div>
-  <div class="scroll-container">
-    <p>
-      Scroll down
-      <img src="./assets/img/scrollarrow.png" alt="" />
-    </p>
+    <div class="scroll-container">
+      <p>
+        Scroll down
+        <img src="./assets/img/scrollarrow.png" alt="" />
+      </p>
+    </div>
   </div>
 </div>

@@ -48,8 +48,10 @@ export class HeaderComponent implements OnInit {
 
     if (this.isMenuOpen) {
       this.renderer.addClass(mobileMenu, 'show');
+      this.disableScroll(); // Scrollen deaktivieren
     } else {
       this.renderer.removeClass(mobileMenu, 'show');
+      this.enableScroll(); // Scrollen aktivieren
     }
   }
 
@@ -57,16 +59,23 @@ export class HeaderComponent implements OnInit {
     this.isMenuOpen = false;
     const mobileMenu = this.mobileMenu.nativeElement;
     this.renderer.removeClass(mobileMenu, 'show');
+    this.enableScroll(); // Scrollen aktivieren
+  }
+
+  disableScroll() {
+    this.renderer.setStyle(document.body, 'overflow', 'hidden');
+  }
+
+  enableScroll() {
+    this.renderer.setStyle(document.body, 'overflow', 'auto');
   }
 
   navigateAndScroll(section: string) {
     if (this.router.url !== '/') {
-      // Falls wir nicht auf "/" sind, speichere die Sektion und navigiere zuerst
       localStorage.setItem('scrollToSection', section);
       this.router.navigate(['/']);
     } else {
-      // Falls wir schon auf "/", direkt scrollen
-      this.scrollToElement(section, 100);
+      this.scrollToElement(section, 105);
     }
   }
 

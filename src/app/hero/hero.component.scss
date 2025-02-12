@@ -1,10 +1,22 @@
 @import "../../styles.scss";
 
 .hero-container {
-  width: 1344px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.socials {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .me-container {
@@ -63,9 +75,6 @@
 .socials-container {
   width: 566px;
   height: 40px;
-  position: absolute;
-  top: 860px;
-  left: 0;
   display: flex;
   align-items: center;
   gap: 32px;
@@ -145,12 +154,10 @@
 }
 
 .scroll-container {
-  position: absolute;
-  top: 700px;
-  right: 0;
   transform: rotate(90deg);
   z-index: 3;
   > p {
+    margin: 0;
     font-family: "Poppins", serif;
     font-size: 23px;
     font-weight: 400;
@@ -172,10 +179,13 @@
 @media screen and (max-width: 370px) {
   .name-job {
     flex-direction: column !important;
-}
-.i-am {
-  transform: rotate(0deg);
-}
+    position: unset !important;
+  }
+  .i-am {
+    font-size: 66px;
+    position: unset !important;
+    transform: rotate(0deg);
+  }
 }
 @media screen and (max-width: 900px) {
   .me-bg {
@@ -211,6 +221,10 @@
   }
 }
 @media screen and (max-width: 1405px) {
+  .hero {
+    flex-direction: column;
+    gap: 32px;
+  }
   .me-bg {
     height: 1200px;
   }
@@ -256,7 +270,7 @@
     flex-direction: row;
     align-items: center;
     position: relative;
-    left: -20px;
+    left: -19px;
     > h2 {
       height: 60px;
       font-size: 44px;
@@ -278,9 +292,7 @@
     position: unset;
   }
   .scroll-container {
-    // display: none;
-    z-index: 5;
-    right: -42px;
+    display: none;
     > p {
       margin-block-start: 0;
       margin-block-end: 0;
@@ -298,8 +310,14 @@
   }
 }
 
+@media screen and (max-width: 900px) {
+  .scroll-container {
+    top: 800px;
+  }
+}
+
 @media screen and (max-width: 400px) {
-  .name-container[_ngcontent-ng-c988309638] {
+  .name-container {
     width: auto;
   }
 }

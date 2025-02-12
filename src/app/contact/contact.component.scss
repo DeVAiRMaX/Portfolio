@@ -220,10 +220,18 @@ span.error-feedback {
   color: white;
   cursor: pointer;
   transition: all 0.2s ease;
-}
-.sendmsg-button:hover {
-  background-color: #9747ff;
-  transform: scaleX(1.1) scaleY(1.1);
+
+  &:hover {
+    background-color: #9747ff;
+    transform: scaleX(1.1) scaleY(1.1);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #b9b9b9; 
+    transform: none; 
+  }
 }
 
 .scroll-up-icon {

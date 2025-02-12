@@ -95,9 +95,15 @@
     justify-content: center;
     gap: 16px;
   }
-  .footer-copyright{
-    >h2{
+  .footer-copyright {
+    > h2 {
       text-align: center;
     }
-}
+    >p{
+      font-size: 16px;
+    }
+  }
+  .footer-logo {
+    align-items: center;
+  }
 }
