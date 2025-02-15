@@ -19,7 +19,7 @@ export class AppComponent {
     this.translate.setDefaultLang('de');
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        this.hideImages = event.url.includes('/app-impressum');
+        this.hideImages = event.url.includes('/app-impressum') || event.url.includes('/app-privacypolicy');
       }
     });
   }

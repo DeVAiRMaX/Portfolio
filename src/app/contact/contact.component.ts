@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
   http = inject(HttpClient);
   sanitizer = inject(DomSanitizer);
   translate = inject(TranslateService);
@@ -24,11 +24,22 @@ export class ContactComponent {
     email: "",
     message: "",
   };
+
   isPolicyChecked: boolean = false;
   showFeedback = false;
   safeDatenschutz: SafeHtml = "";
 
-  constructor() {
+  constructor() { }
+
+  ngOnInit(): void {
+    this.updateTranslation();
+
+    this.translate.onLangChange.subscribe(() => {
+      this.updateTranslation();
+    });
+  }
+
+  updateTranslation(): void {
     this.translate.get('contact.form.policyText').subscribe((text: string) => {
       this.safeDatenschutz = this.sanitizer.bypassSecurityTrustHtml(text);
     });
@@ -56,11 +67,12 @@ export class ContactComponent {
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+
   handlePolicyClick(event: Event): void {
     event.preventDefault();
     const target = event.target as HTMLElement;
     if (target.tagName === 'A' && target.classList.contains('policy-link')) {
-      this.router.navigate(['/app-impressum']);
+      this.router.navigate(['/app-privacypolicy']);
     }
   }
 }

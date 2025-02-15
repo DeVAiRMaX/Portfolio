@@ -1,31 +1,31 @@
 {
-	"ABOUT_ME": {
-		"CHALLENGE": "I am open to new things and always looking for personal challenges to continuously expand and deepen my knowledge and skills.",
-		"HEADER": "About me",
-		"INTRO": "Hello, I am a German-speaking frontend developer from the region around Siegen.",
-		"LOCATION": "Flexible in terms of working environments, I can work effectively both on site in Siegen and the surrounding area as well as remotely.",
-		"PROBLEM_SOLVING": "In my job, programming is not just about writing code - it's a creative way of solving problems."
-	},
-	"SKILLS": {
-		"CONTACT_ME": "Please feel free to contact me. I look forward to expanding my knowledge and gaining new experience.",
-		"GET_IN_TOUCH": "Get in touch",
-		"ICONS": {
-			"ANGULAR": "angular",
-			"CSS": "css",
-			"FIREBASE": "firebase",
-			"GIT": "git",
-			"HTML": "html",
-			"JAVASCRIPT": "javascript",
-			"LEARNING": "Continually learning",
-			"MATERIAL_DESIGN": "material design",
-			"REST_API": "rest api",
-			"SCRUM": "scrum",
-			"TYPESCRIPT": "typescript"
-		},
-		"LOOKING_FOR": "Looking for another skill?",
-		"MY_SKILLS": "My skills",
-		"SKILL_DESCRIPTION": "I have gained experience in building projects with different frontend technologies and concepts."
-	},
+  "ABOUT_ME": {
+    "CHALLENGE": "I am open to new things and always looking for personal challenges to continuously expand and deepen my knowledge and skills.",
+    "HEADER": "About me",
+    "INTRO": "Hello, I am a German-speaking frontend developer from the region around Siegen.",
+    "LOCATION": "Flexible in terms of working environments, I can work effectively both on site in Siegen and the surrounding area as well as remotely.",
+    "PROBLEM_SOLVING": "In my job, programming is not just about writing code - it's a creative way of solving problems."
+  },
+  "SKILLS": {
+    "CONTACT_ME": "Please feel free to contact me. I look forward to expanding my knowledge and gaining new experience.",
+    "GET_IN_TOUCH": "Get in touch",
+    "ICONS": {
+      "ANGULAR": "angular",
+      "CSS": "css",
+      "FIREBASE": "firebase",
+      "GIT": "git",
+      "HTML": "html",
+      "JAVASCRIPT": "javascript",
+      "LEARNING": "Continually learning",
+      "MATERIAL_DESIGN": "material design",
+      "REST_API": "rest api",
+      "SCRUM": "scrum",
+      "TYPESCRIPT": "typescript"
+    },
+    "LOOKING_FOR": "Looking for another skill?",
+    "MY_SKILLS": "My skills",
+    "SKILL_DESCRIPTION": "I have gained experience in building projects with different frontend technologies and concepts."
+  },
   "portfolio": {
     "title": "Portfolio",
     "explore": "Discover a selection of my projects here - interact with them to experience my skills live.",
@@ -62,23 +62,23 @@
       "author": "V. Schuster - Team Partner"
     }
   },
-    "contact": {
-      "title": "Contact",
-      "problem": "Got a problem to solve?",
-      "introduction": "Please use this form to contact me. I look forward to hearing from you, getting to know your ideas and contributing to your projects with my work.",
-      "frontendDev": "Need a Frontend developer? Contact me!",
-      "form": {
-        "namePlaceholder": "Your name",
-        "nameRequired": "Your name is required",
-        "emailPlaceholder": "Your email",
-        "emailRequired": "Your email is required",
-        "messagePlaceholder": "Your message",
-        "messageRequired": "Message must not be empty. At least 4 characters!",
-        "policyText": "I've read the <a href='/app-impressum' class='policy-link'>Datenschutzrichtlinien</a> and agree to the processing of my data as outlined.",
-        "sendButton": "Send message"
-      }
-    },
-    "footer": {
+  "contact": {
+    "title": "Contact",
+    "problem": "Got a problem to solve?",
+    "introduction": "Please use this form to contact me. I look forward to hearing from you, getting to know your ideas and contributing to your projects with my work.",
+    "frontendDev": "Need a Frontend developer? Contact me!",
+    "form": {
+      "namePlaceholder": "Your name",
+      "nameRequired": "Your name is required",
+      "emailPlaceholder": "Your email",
+      "emailRequired": "Your email is required",
+      "messagePlaceholder": "Your message",
+      "messageRequired": "Message must not be empty. At least 4 characters!",
+      "policyText": "I've read the <a href='/app-privacypolicy' class='policy-link'>privacy policy</a> and agree to the processing of my data as outlined.",
+      "sendButton": "Send message"
+    }
+  },
+  "footer": {
     "legalNotice": "Legal Notice",
     "copyright": "Maximilian Wagener 2024"
   },
@@ -95,25 +95,73 @@
     "letstalk": "Let's talk!",
     "scrollDown": "Scroll down"
   },
-    "impressum": {
-      "title": "Legal Notice",
-      "infoTitle": "Information pursuant to § 5 TMG (German Telemedia Act):",
-      "address": "Maximilian Wagener, 57234 Wilnsdorf, Wiesenrainsgarten 13,Germany",
-      "contactTitle": "Contact:",
-      "email": "Email: maxiwagener@web.de",
-      "disclaimerTitle": "Disclaimer:",
-      "disclaimerText": "The content of this website has been created with the greatest possible care. However, I cannot guarantee that the content is accurate, complete, or up-to-date. As a service provider, I am responsible for my own content on these pages in accordance with general laws pursuant to Section 7 (1) of the German Telemedia Act (TMG). However, according to Sections 8 to 10 of the TMG, service providers are not obligated to permanently monitor submitted or stored information or to search for evidence that indicates illegal activity. Legal obligations to remove information or to block the use of information remain unaffected. In this case, liability is only possible from the moment of knowledge of a specific infringement. Upon notification of appropriate violations, I will remove this content immediately.",
-      "liabilityLinksTitle": "Liability for Links:",
-      "liabilityLinksText": "My website contains links to external websites of third parties over whose content I have no influence. Therefore, I cannot assume any liability for these external contents. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognizable at the time of linking. However, a permanent control of the content of the linked pages is not reasonable without concrete evidence of an infringement. Upon notification of violations, I will remove such links immediately.",
-      "copyrightTitle": "Copyright:",
-      "copyrightText": "The content and works on these pages created by the website operator are subject to German copyright law. The reproduction, processing, distribution, and any kind of exploitation outside the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use. As far as the content on this site was not created by the operator, the copyrights of third parties are respected. In particular, contents of third parties are marked as such. Should you still become aware of a copyright infringement, I request that you notify me accordingly. Upon notification of violations, I will remove such content immediately.",
-      "liabilityTitle": "Liability:",
-      "liabilityText": "We shall not be liable for any loss or damage arising from or in connection with the use of this website, including but not limited to, direct, indirect, incidental, consequential, or punitive damages.",
-      "governingLawTitle": "Governing Law:",
-      "governingLawText": "This legal notice and your use of this website shall be governed by and construed in accordance with the laws of Germany, and any disputes relating to these terms and conditions will be subject to the exclusive jurisdiction of the courts of Germany.",
-      "changesTitle": "Changes to this Legal Notice:",
-      "changesText": "We reserve the right to modify this legal notice at any time. The current version will always be accessible on this page.",
-      "privacyTitle": "Privacy:",
-      "privacyText": "We take the protection of your personal data very seriously. For detailed information about the nature, scope, and purpose of the collection and use of your data, as well as your rights and privacy protection options, please refer to our detailed Privacy Policy."
-    }  
+  "impressum": {
+    "title": "Legal Notice",
+    "infoTitle": "Information pursuant to § 5 TMG (German Telemedia Act):",
+    "address": "Maximilian Wagener, 57234 Wilnsdorf, Wiesenrainsgarten 13,Germany",
+    "contactTitle": "Contact:",
+    "email": "Email: maxiwagener@web.de",
+    "disclaimerTitle": "Disclaimer:",
+    "disclaimerText": "The content of this website has been created with the greatest possible care. However, I cannot guarantee that the content is accurate, complete, or up-to-date. As a service provider, I am responsible for my own content on these pages in accordance with general laws pursuant to Section 7 (1) of the German Telemedia Act (TMG). However, according to Sections 8 to 10 of the TMG, service providers are not obligated to permanently monitor submitted or stored information or to search for evidence that indicates illegal activity. Legal obligations to remove information or to block the use of information remain unaffected. In this case, liability is only possible from the moment of knowledge of a specific infringement. Upon notification of appropriate violations, I will remove this content immediately.",
+    "liabilityLinksTitle": "Liability for Links:",
+    "liabilityLinksText": "My website contains links to external websites of third parties over whose content I have no influence. Therefore, I cannot assume any liability for these external contents. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognizable at the time of linking. However, a permanent control of the content of the linked pages is not reasonable without concrete evidence of an infringement. Upon notification of violations, I will remove such links immediately.",
+    "copyrightTitle": "Copyright:",
+    "copyrightText": "The content and works on these pages created by the website operator are subject to German copyright law. The reproduction, processing, distribution, and any kind of exploitation outside the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use. As far as the content on this site was not created by the operator, the copyrights of third parties are respected. In particular, contents of third parties are marked as such. Should you still become aware of a copyright infringement, I request that you notify me accordingly. Upon notification of violations, I will remove such content immediately.",
+    "liabilityTitle": "Liability:",
+    "liabilityText": "We shall not be liable for any loss or damage arising from or in connection with the use of this website, including but not limited to, direct, indirect, incidental, consequential, or punitive damages.",
+    "governingLawTitle": "Governing Law:",
+    "governingLawText": "This legal notice and your use of this website shall be governed by and construed in accordance with the laws of Germany, and any disputes relating to these terms and conditions will be subject to the exclusive jurisdiction of the courts of Germany.",
+    "changesTitle": "Changes to this Legal Notice:",
+    "changesText": "We reserve the right to modify this legal notice at any time. The current version will always be accessible on this page.",
+    "privacyTitle": "Privacy:",
+    "privacyText": "We take the protection of your personal data very seriously. For detailed information about the nature, scope, and purpose of the collection and use of your data, as well as your rights and privacy protection options, please refer to our detailed Privacy Policy."
+  },
+  "PRIVACY_POLICY": {
+    "TITLE": "Privacy Policy",
+    "SECTION_1": {
+      "TITLE": "1. Information on the Collection of Personal Data",
+      "PARAGRAPH_1": "(a) In the following, we inform you about the collection of personal data when using our website. Personal data are all data that can be personally related to you, e.g. name, address, email addresses, user behaviour.",
+      "PARAGRAPH_2": "(b) Controller pursuant to Art. 4 para. 7 of the EU General Data Protection Regulation (GDPR) is Maximilian Wagener, Wiesenrainsgarten 13, 57234 Wilnsdorf, Germany."
+    },
+    "SECTION_2": {
+      "TITLE": "2. Your Rights",
+      "PARAGRAPH_1": "You have the following rights with respect to the personal data concerning you:",
+      "LIST_ITEM_1": "Right to access,",
+      "LIST_ITEM_2": "Right to rectification or erasure,",
+      "LIST_ITEM_3": "Right to restriction of processing,",
+      "LIST_ITEM_4": "Right to object to processing,",
+      "LIST_ITEM_5": "Right to data portability.",
+      "PARAGRAPH_2": "You also have the right to lodge a complaint with a supervisory authority concerning the processing of your personal data."
+    },
+    "SECTION_3": {
+      "TITLE": "3. Collection of Personal Data When Visiting Our Website",
+      "PARAGRAPH_1": "If you wish to view our website, we collect the following data, which are technically necessary for us to display our website to you and to ensure stability and security (legal basis is Art. 6 para. 1 sentence 1 lit. f GDPR):",
+      "LIST_ITEM_1": "IP address",
+      "LIST_ITEM_2": "Date and time of the request",
+      "LIST_ITEM_3": "Time zone difference to Greenwich Mean Time (GMT)",
+      "LIST_ITEM_4": "Content of the request (specific page)",
+      "LIST_ITEM_5": "Access status/HTTP status code",
+      "LIST_ITEM_6": "Data volume transmitted in each case",
+      "LIST_ITEM_7": "Website from which the request comes",
+      "LIST_ITEM_8": "Browser",
+      "LIST_ITEM_9": "Operating system and its interface"
+    },
+    "SECTION_4": {
+      "TITLE": "4. Contact Form / Email Contact",
+      "PARAGRAPH_1": "When you contact us by email or via a contact form, the data you provide (your email address, possibly your name and telephone number) will be stored by us in order to answer your questions. We delete the data arising in this context after storage is no longer necessary, or limit the processing if there are statutory retention obligations."
+    },
+    "SECTION_5": {
+      "TITLE": "5. Hosting",
+      "PARAGRAPH_1": "We host the contents of our website with the following provider: All-Inkl"
+    },
+    "SECTION_6": {
+      "TITLE": "6. Plugins and Tools",
+      "PARAGRAPH_1": "This site uses so-called Google Fonts provided by Google for the uniform display of fonts. The Google Fonts are locally installed. A connection to Google servers does not take place. For more information about Google Fonts, please visit ",
+      "PARAGRAPH_2": " and refer to Google's privacy policy: "
+    },
+    "SECTION_7": {
+      "TITLE": "7. Changes to this Privacy Policy",
+      "PARAGRAPH_1": "We reserve the right to amend this privacy policy at any time. The current version is available on our website."
+    }
+  }
 }

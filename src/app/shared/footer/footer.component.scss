@@ -87,7 +87,11 @@
 .scocialicon:hover {
   transform: scaleX(1.4) scaleY(1.4);
 }
-
+@media screen and (max-width: 1550px) {
+  .footer-section {
+    padding: 32px;
+  }
+}
 @media screen and (max-width: 900px) {
   .footer-section {
     flex-direction: column-reverse;
