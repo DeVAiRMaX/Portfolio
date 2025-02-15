@@ -107,8 +107,9 @@
   .feedback-container {
     // width: 90% !important;
     > img {
-      right: 112px !important;
+      left: -40%;
       top: -398px !important;
+      z-index: 999999;
     }
   }
   .author {
@@ -150,10 +151,10 @@
 
 @media screen and (max-width: 1405px) {
   .comment {
-    width: auto;
+    width: auto !important;
   }
   .feedback-container {
-    width: auto;
+    width: 100% !important;
     justify-content: unset;
     flex-direction: column;
     > img {
@@ -162,7 +163,7 @@
     }
   }
   .comment-section {
-    width: auto;
+    width: 90%;
     height: auto;
     flex-direction: column-reverse;
     gap: 48px;
