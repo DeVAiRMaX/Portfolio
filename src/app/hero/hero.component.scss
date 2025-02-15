@@ -35,7 +35,7 @@
 
 .me {
   position: relative;
-  width: 646px;
+  width: auto;
   height: 705px;
   z-index: 2;
 }
@@ -186,14 +186,16 @@
     position: unset !important;
     transform: rotate(0deg);
   }
+  .me {
+    width: 95% !important;
+  }
 }
 @media screen and (max-width: 900px) {
   .me-bg {
-    height: 1000px !important;
+    height: 600px !important;
   }
   .me {
-    width: 410.61px !important;
-    height: 448.11px !important;
+    height: 460px;
   }
   .name-container {
     top: -40px !important;
@@ -224,9 +226,10 @@
   .hero {
     flex-direction: column;
     gap: 32px;
+    align-items: unset;
   }
   .me-bg {
-    height: 1200px;
+    height: 900px;
   }
   .name-job-2 {
     > h2 {
@@ -244,16 +247,13 @@
     gap: 52px;
   }
   .me-container {
-    width: 100%;
+    width: auto;
     display: flex;
     justify-content: center;
   }
-  .me {
-    width: 546px;
-    height: 605px;
-    left: 15px;
-    position: relative;
-  }
+  // .me {
+  //   height: 605px;
+  // }
   .name-container {
     top: -10px;
     width: 100vw;

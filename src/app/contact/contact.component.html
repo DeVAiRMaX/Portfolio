@@ -89,7 +89,7 @@
               [class.error-feedback]="!policy.valid"
             ></span>
           </label>
-          <p>{{ "contact.form.policyText" | translate }}</p>
+          <p [innerHTML]="safeDatenschutz" (click)="handlePolicyClick($event); scrollToTop()"></p>
         </div>
         <div *ngIf="showFeedback" class="mailFeedback">
           <div>

@@ -1,6 +1,6 @@
 .skill-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -8,9 +8,10 @@
   width: 664px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 26px;
+  margin-top: 16px;
 }
 .singel-icon {
   width: 88px;
@@ -118,10 +119,15 @@
   display: none;
 }
 
-@media screen and (max-width: 900px) {
-  .icons {
-    width: 90% !important;
+@media screen and (max-width: 400px) {
+  .my-skills-header {
+    > h2 {
+      font-size: 36px !important;
+    }
   }
+}
+
+@media screen and (max-width: 900px) {
   .skill-description-responsive {
     > div {
       > h3 {
@@ -158,6 +164,12 @@
   .icons {
     align-items: center !important;
     justify-content: center !important;
+    gap: 16px !important;
+  }
+  .singel-icon{
+    >p{
+      font-size: 14px;
+    }
   }
   .skill-container {
     width: unset !important;
@@ -176,7 +188,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 16px;
+      gap: 24px;
       > p {
         width: 100%;
         font-size: 16px;
@@ -211,6 +223,9 @@
     align-items: center;
     justify-content: flex-end;
     gap: 6px;
+    >h2{
+      font-size: 45px;
+    }
   }
   .skill-container {
     width: 70%;
@@ -235,6 +250,7 @@
     }
   }
   .icons {
+    margin-top: unset;
     width: unset;
     align-items: flex-start;
     justify-content: center;

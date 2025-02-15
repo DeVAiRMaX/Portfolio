@@ -33,14 +33,11 @@
   }
 }
 .project {
-  width: 1168px;
-  height: 339.19px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 35px;
 }
-.description{
+.description {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -67,11 +64,28 @@
     margin: 0;
   }
 }
-.description-buttons {
+.description-buttons-left {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 64px;
+  > button:hover {
+    background-color: #70e61c;
+    transform: scale(1.1);
+  }
 }
+
+.description-buttons-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 64px;
+  > button:hover {
+    background-color: #70e61c;
+    transform: scale(1.1);
+  }
+}
+
 .live {
   height: 58px;
   background-color: #9747ff;
@@ -131,8 +145,13 @@
   .portfolio-container {
     width: 100% !important;
   }
+  .laptop{
+    >img{
+      width: 95% !important;
+    }
+  }
   .project {
-    width: 342px !important;
+    width: 95% !important;
     flex-direction: column;
     gap: 35px !important;
   }
@@ -155,7 +174,7 @@
       text-align: center;
     }
   }
-  .description-buttons {
+ .description-buttons-left, .description-buttons-right {
     width: auto;
     gap: unset;
     justify-content: space-between;
@@ -168,6 +187,9 @@
   }
 }
 @media screen and (max-width: 1405px) {
+  .live {
+    width: max-content;
+  }
   .project {
     width: auto;
     height: auto;

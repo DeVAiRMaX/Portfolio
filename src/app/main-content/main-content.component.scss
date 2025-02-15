@@ -14,12 +14,13 @@
 }
 
 .vector {
-  width: 100%;
-  min-width: 1440px;
-  height: 1078.6px;
   position: absolute;
-  top: 379px;
+  top: 467px;
   left: 0;
+  width: 100%;
+  height: 767px;
+  display: block;
+  background-color: transparent;
   z-index: 3;
 }
 
@@ -76,7 +77,7 @@
   position: absolute;
   z-index: 3;
   top: 750px;
-  right: -10px;
+  right: 0;
 }
 
 .greenshadow1 {
@@ -141,7 +142,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    bottom: 69px;
+    bottom: 0;
   }
 
   .feedback {
@@ -152,7 +153,7 @@
     gap: 160px;
   }
   .vector {
-    top: 291px;
+    top: 420px;
   }
   .space {
     gap: unset;
@@ -183,7 +184,6 @@
     width: 232.32px;
     height: 415.93px;
     top: 748px !important;
-    right: -55px !important;
   }
 
   .greenshadow1 {
@@ -210,7 +210,8 @@
     height: 448.9px;
   }
   .vector {
-    top: 112px;
+    height: 280px;
+    top: 430px;
   }
   .wrapper {
     gap: 120px;

@@ -73,6 +73,13 @@ p {
 .hovereffect:hover {
   transform: scale(1.4);
 }
+@media screen and (max-width: 400px) {
+  .description-section {
+    > h2 {
+      font-size: 36px !important;
+    }
+  }
+}
 @media screen and (max-width: 900px) {
   .description-section {
     width: 90% !important;
@@ -84,6 +91,9 @@ p {
 @media screen and (max-width: 1405px) {
   .description-section {
     width: 70%;
+    > h2 {
+      font-size: 45px;
+    }
   }
   .about-me-container {
     flex-direction: column;

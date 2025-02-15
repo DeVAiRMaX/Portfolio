@@ -2,14 +2,23 @@ $global-darkblue: #141d2f;
 $global-green: #70e61c;
 $global-purple: #9747ff;
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+.policy-link {
+  color: #9747ff !important;
+  text-decoration: none !important;
 }
 
 body {
   margin: 0;
   background-color: $global-darkblue;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   font-family: "Poppins", serif;
 }
 
@@ -17,7 +26,7 @@ body {
   position: absolute;
   width: 100vw;
   max-width: 100%;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {

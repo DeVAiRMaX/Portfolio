@@ -1,5 +1,4 @@
 .footer-container {
-  width: 100vw;
   background-color: #141d2f;
   border-top: 4px solid #70e61c;
   display: flex;
@@ -9,11 +8,12 @@
   z-index: 9;
 }
 .footer-section {
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   height: 291px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .footer-logo {

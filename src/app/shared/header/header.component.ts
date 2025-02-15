@@ -22,7 +22,12 @@ export class HeaderComponent implements OnInit {
     private translate: TranslateService,
     private router: Router
   ) {
+    const savedLanguage = localStorage.getItem('selectedLanguage') as 'EN' | 'DE' | null;
+    if (savedLanguage) {
+      this.language = savedLanguage;
+    }
     this.translate.setDefaultLang(this.language.toLowerCase());
+    this.translate.use(this.language.toLowerCase());
   }
 
   ngOnInit() {
@@ -40,26 +45,27 @@ export class HeaderComponent implements OnInit {
   toggleLanguage() {
     this.language = this.language === 'DE' ? 'EN' : 'DE';
     this.translate.use(this.language.toLowerCase());
+    localStorage.setItem('selectedLanguage', this.language);
   }
 
   showMenu() {
     this.isMenuOpen = !this.isMenuOpen;
     const mobileMenu = this.mobileMenu.nativeElement;
-
+  
     if (this.isMenuOpen) {
       this.renderer.addClass(mobileMenu, 'show');
-      this.disableScroll(); // Scrollen deaktivieren
+      this.disableScroll();
     } else {
       this.renderer.removeClass(mobileMenu, 'show');
-      this.enableScroll(); // Scrollen aktivieren
+      this.enableScroll();
     }
   }
-
+  
   closeMenu() {
     this.isMenuOpen = false;
     const mobileMenu = this.mobileMenu.nativeElement;
     this.renderer.removeClass(mobileMenu, 'show');
-    this.enableScroll(); // Scrollen aktivieren
+    this.enableScroll();
   }
 
   disableScroll() {

@@ -74,7 +74,7 @@
         "emailRequired": "Your email is required",
         "messagePlaceholder": "Your message",
         "messageRequired": "Message must not be empty. At least 4 characters!",
-        "policyText": "I've read the privacy policy and agree to the processing of my data as outlined.",
+        "policyText": "I've read the <a href='/app-impressum' class='policy-link'>Datenschutzrichtlinien</a> and agree to the processing of my data as outlined.",
         "sendButton": "Send message"
       }
     },

@@ -34,41 +34,40 @@ body {
   transform: translateX(40px);
 }
 
-.mobile-menu.show {
+.mobile-menu {
   position: fixed;
   top: 0;
-  right: 0;
-  z-index: 900;
-  overflow: hidden;
-}
-
-.mobile-menu {
-  position: absolute;
+  right: -100vw;
   z-index: 999;
   background-color: #141d2fec;
   width: 100vw;
   max-width: 100%;
   height: 100vh;
-  right: -100vw;
   transition: right 0.3s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
+
   > div {
     display: flex;
     flex-direction: column;
     gap: 29px;
-    position: relative;
-    top: -100px;
+
     > a {
       color: whitesmoke;
       text-decoration: none;
       font-size: 23px;
       font-weight: 400;
     }
+
     > a:hover {
       color: $global-green;
     }
+  }
+
+  &.show {
+    right: 0;
+    z-index: 997;
   }
 }
 
@@ -114,6 +113,7 @@ body {
 
 .header-container {
   width: 100vw;
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,7 +130,7 @@ body {
   font-family: "Poppins", serif;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   > img {
     width: 180px;
     cursor: pointer;

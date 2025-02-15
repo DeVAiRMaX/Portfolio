@@ -50,33 +50,35 @@
   </div>
 </div>
 
-<div class="mobile-menu" #mobileMenu>
+<div class="mobile-menu" #mobileMenu [class.show]="isMenuOpen">
   <div>
     <a
-        [routerLink]="['/']"
-        href="javascript:void(0)"
-        (click)="navigateAndScroll('aboutMe'); showMenu()"
-
-      >
-        {{ "header.aboutMe" | translate }}
-      </a>
-      <a
-        [routerLink]="['/']"
-        href="javascript:void(0)"
-        (click)="navigateAndScroll('skills'); showMenu()"
-        >{{ "header.skills" | translate }}</a
-      >
-      <a
-        [routerLink]="['/']"
-        href="javascript:void(0)"
-        (click)="navigateAndScroll('portfolio'); showMenu()"
-        >{{ "header.portfolio" | translate }}</a
-      >
-      <a
-        [routerLink]="['/']"
-        href="javascript:void(0)"
-        (click)="navigateAndScroll('contact'); showMenu()"
-        >{{ "header.contact" | translate }}</a
-      >
+      [routerLink]="['/']"
+      href="javascript:void(0)"
+      (click)="navigateAndScroll('aboutMe'); showMenu()"
+    >
+      {{ "header.aboutMe" | translate }}
+    </a>
+    <a
+      [routerLink]="['/']"
+      href="javascript:void(0)"
+      (click)="navigateAndScroll('skills'); showMenu()"
+    >
+      {{ "header.skills" | translate }}
+    </a>
+    <a
+      [routerLink]="['/']"
+      href="javascript:void(0)"
+      (click)="navigateAndScroll('portfolio'); showMenu()"
+    >
+      {{ "header.portfolio" | translate }}
+    </a>
+    <a
+      [routerLink]="['/']"
+      href="javascript:void(0)"
+      (click)="navigateAndScroll('contact'); showMenu()"
+    >
+      {{ "header.contact" | translate }}
+    </a>
   </div>
 </div>

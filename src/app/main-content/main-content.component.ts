@@ -26,13 +26,13 @@ import { ImpressumComponent } from '../shared/impressum/impressum.component';
   styleUrl: './main-content.component.scss',
   animations: [
     trigger('scrollAnimation', [
-      state('hidden', style({ opacity: 0, transform: 'translateX(-100px)' })),
-      state('visible', style({ opacity: 1, transform: 'translateX(0)' })),
+      state('hidden', style({ opacity: 0, transform: 'scale(0.9)' })),  // Verkleinere das Element
+      state('visible', style({ opacity: 1, transform: 'scale(1)' })),
       transition('hidden => visible', animate('0.6s ease-out'))
     ]),
     trigger('scrollAnimationRight', [
-      state('hidden', style({ opacity: 0, transform: 'translateX(100px)' })),
-      state('visible', style({ opacity: 1, transform: 'translateX(0)' })),
+      state('hidden', style({ opacity: 0, transform: 'scale(0.9)' })),  // Verkleinere das Element
+      state('visible', style({ opacity: 1, transform: 'scale(1)' })),
       transition('hidden => visible', animate('0.6s ease-out'))
     ])
   ]
@@ -46,7 +46,6 @@ export class MainContentComponent {
   contactState = 'hidden';
 
   ngOnInit() {
-    // Beim Initialisieren der Komponente prüfen, ob die Bildschirmbreite <= 450px ist
     if (window.innerWidth <= 450) {
       this.aboutMeState = 'visible';
       this.skillsState = 'visible';
