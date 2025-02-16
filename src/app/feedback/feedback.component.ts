@@ -33,11 +33,19 @@ export class FeedbackComponent {
 
   comments = Object.values(this.feedbackState);
 
+/**
+ * Navigates to the previous comment in the feedback list. 
+ * If the current comment is the first one, it wraps around to the last comment.
+ */
   goToPreviousComment(): void {
     this.currentIndex = (this.currentIndex === 0) ? this.comments.length - 1 : this.currentIndex - 1;
   }
 
   goToNextComment(): void {
+  /**
+   * Navigates to the next comment in the feedback list.
+   * If the current comment is the last one, it wraps around to the first comment.
+   */
     this.currentIndex = (this.currentIndex === this.comments.length - 1) ? 0 : this.currentIndex + 1;
   }
 

@@ -15,8 +15,13 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
 })
 export class AppComponent {
   hideImages = false;
-  constructor(private translate: TranslateService, private router: Router) {
-    this.translate.setDefaultLang('de');
+
+  /**
+   * Subscribe to router events to detect navigations to /app-impressum and /app-privacypolicy,
+   * and set hideImages to true in those cases. This is used to hide the images in the
+   * main-content component when the user navigates to one of the static pages.
+   */
+  constructor(private router: Router) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         this.hideImages = event.url.includes('/app-impressum') || event.url.includes('/app-privacypolicy');

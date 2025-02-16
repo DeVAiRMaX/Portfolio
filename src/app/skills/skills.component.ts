@@ -10,6 +10,12 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
+
+  /**
+   * Scrolls to the given HTML element id with an optional offset.
+   * @param elementId The id of the element to scroll to.
+   * @param offset The offset to apply to the element position before scrolling to it.
+   */
   scrollToElement(elementId: string, offset: number = 0): void {
     const element = document.getElementById(elementId);
     if (element) {
@@ -23,3 +29,4 @@ export class SkillsComponent {
     }
   }
 }
+
