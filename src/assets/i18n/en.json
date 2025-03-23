@@ -45,10 +45,15 @@
         "tech": "JavaScript | HTML | CSS | Api",
         "description": "Based on the PokéAPI, a simple library that provides and catalogs Pokémon information."
       },
-      "dabooble": {
-        "title": "DA Bubble",
-        "tech": "Angular | TypeScript | Firebase",
-        "description": "This app is a Slack clone. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
+      "landingpage": {
+        "title": "Simple Landingpage",
+        "tech": "Angular | TypeScript | HTML | SCSS | Figma",
+        "description": "A simple landing page for a company that offers guided tours."
+      },
+      "simplecrm": {
+        "title": "SimpleCRM",
+        "tech": "Angular | TypeScript | HTML | SCSS | Firebase | KI-Tools| Material Design",
+        "description": "A simple CRM application for businesses to manage company and customer accounts with features for creating, editing, and deleting records."
       },
       "buttons": {
         "live": "Live Test",

@@ -7,5 +7,6 @@ import { PrivacypolicyComponent } from './shared/privacypolicy/privacypolicy.com
 export const routes: Routes = [
   { path: '', component: MainContentComponent },
   { path: 'app-impressum', component: ImpressumComponent },
-  { path: 'app-privacypolicy', component: PrivacypolicyComponent }
+  { path: 'app-privacypolicy', component: PrivacypolicyComponent },
+  { path: '**', redirectTo: '' }
 ];

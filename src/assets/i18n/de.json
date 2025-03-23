@@ -32,7 +32,7 @@
     "projects": {
       "join": {
         "title": "Join",
-        "tech": "Angular | TypeScript | HTML | CSS | Firebase",
+        "tech": "Angular | TypeScript | HTML | CSS | Figma | Firebase",
         "description": "Task Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, ordnen Sie Benutzer und Kategorien zu."
       },
       "sharki": {
@@ -45,10 +45,15 @@
         "tech": "JavaScript | HTML | CSS | Api",
         "description": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert."
       },
-      "dabooble": {
-        "title": "DA Bubble",
-        "tech": "Angular | TypeScript | Firebase",
-        "description": "Diese App ist ein Slack-Clone. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Nachrichten und robuster Kanalorganisation."
+      "landingpage": {
+        "title": "Simple Landingpage",
+        "tech": "Angular | TypeScript | HTML | SCSS | Figma",
+        "description": "Eine einfache Landingpage für ein Unternehmen, welches geführte Wanderungen anbietet."
+      },
+      "simplecrm": {
+        "title": "SimpleCRM",
+        "tech": "Angular | TypeScript | HTML | SCSS | Firebase | KI-Tools| Material Design",
+        "description": "Eine einfache CRM-Anwendung für Unternehmen zur Verwaltung von Firmen- und Kundenkonten mit Funktionen zum Anlegen, Bearbeiten und Löschen von Datensätzen."
       },
       "buttons": {
         "live": "Live-Test",
