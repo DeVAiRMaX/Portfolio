@@ -48,7 +48,7 @@
       "landingpage": {
         "title": "Simple Landingpage",
         "tech": "Angular | TypeScript | HTML | SCSS | Figma",
-        "description": "Eine einfache Landingpage für ein Unternehmen, welches geführte Wanderungen anbietet."
+        "description": "Eine einfache Landingpage für ein fiktives Unternehmen. Die Seite ist vollständig responsiv und bietet eine einfache Navigation."
       },
       "simplecrm": {
         "title": "SimpleCRM",

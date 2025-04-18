@@ -48,7 +48,7 @@
       "landingpage": {
         "title": "Simple Landingpage",
         "tech": "Angular | TypeScript | HTML | SCSS | Figma",
-        "description": "A simple landing page for a company that offers guided tours."
+        "description": "A simple landing page for a fictitious company. The page is fully responsive and offers simple navigation."
       },
       "simplecrm": {
         "title": "SimpleCRM",

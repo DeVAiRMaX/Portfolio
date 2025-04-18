@@ -135,6 +135,8 @@
 .port-responsive-line {
   display: none;
 }
+
+
 @media screen and (max-width: 900px) {
   .title-portfolio {
     justify-content: unset;
@@ -142,8 +144,8 @@
   .portfolio-container {
     width: 100% !important;
   }
-  .laptop{
-    >img{
+  .laptop {
+    > img {
       width: 95% !important;
     }
   }
@@ -171,7 +173,8 @@
       text-align: center;
     }
   }
- .description-buttons-left, .description-buttons-right {
+  .description-buttons-left,
+  .description-buttons-right {
     width: auto;
     gap: unset;
     justify-content: space-between;
